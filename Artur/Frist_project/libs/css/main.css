@@ -2,12 +2,6 @@
      margin: 0;
     padding: 0;  
 }
-.main-container{
-    width: 100%;
-}
-.main-content{
-    width: inherit;
-}
 ul,li,a{
 
     list-style-type: none;
