@@ -1,0 +1,168 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.container, .content, .row, .middle-content{
+    width:100%;
+}
+
+.container-header{
+    width: 100%;
+background:url(../img/001.jpg);
+    background-size: cover;
+    height: 410px;
+
+
+}
+.nav-name, .nav-ul, .nav-contact{
+    display: inline-block;
+    margin-left: 12px;
+
+}.nav-name, .nav-contact{
+    width: 24%;
+}
+ .name, .string, .text2, .text3{
+     text-shadow: -3px -1px 3px black;
+ }
+.nav-ul{
+    width: 48%;
+}
+.text{
+    font-size: 42px;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    padding:5px;
+    margin:0;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background: #211f1f73;
+}
+.string{
+    display: inline-block;
+    float: left;
+    margin-left: 18px;
+    font-size: 15px;
+    font-family: 'Merienda One', cursive;
+}
+.string>a{
+    text-decoration-line: none;
+    color: white;
+}
+.text2, .text3{
+    text-align: center;
+}
+.text2{
+    color: #f4ddbf;
+    font-size: 70px;
+
+}
+
+.text3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.picart>img{
+    margin: 30px auto;
+    display: inherit;
+}
+.left, .right   {
+    width: 49%;
+    margin: 5px;
+    display: inline-block;
+    float: left;
+}
+
+
+.head-article, .comment, .text4{
+    text-align: center;
+}
+.head-article{
+    padding-top: 44px;
+    color: #735946;
+    font-family: 'Aladin', cursive;
+    font-weight: bold;
+    font-size: 29px;
+}
+.comment{
+    color: #BA6620;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.text4{
+    color: #6d5a4c;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.parts{
+    margin-left: 90px;
+    margin-top: 25px;
+}
+.part1, .part2{
+    display: inline-block;
+    float: left;
+    margin: 10px auto;
+}
+
+.part2{
+background: url("../img/02.jpg");
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.part1{
+    margin-top: 96px;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #6d5a4c;
+    font-weight: bold;
+    border-top: 1px solid #6d5a4c;
+    border-bottom: 1px solid #6d5a4c;
+}
+
+
+.left-img1{
+        background: url("../img/03.jpg");
+    }
+.right-img1{
+    background: url("../img/04.jpg");
+}
+.left-img2{
+    background: url("../img/05.jpg");
+}
+.right-img2{
+    background: url("../img/07.jpg");
+}
+.cooks, .imgs{
+    margin-top: 168px;
+
+}
+.img1, .img2 {
+    display: inline-block;
+}
+
+.right-img1, .left-img1,.right-img2, .left-img2{
+    display: inline-block;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    width: 230px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border:9px double #fef0cb
+}
+.aphorism{
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 40px;
+    margin-top: 255px;
+    margin-left: 62px;
+    text-align: center;
+    color: #6d5a4c;
+}
