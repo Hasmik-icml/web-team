@@ -1,117 +1,95 @@
 *{
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 header{
-    top: 0;
+    background-color: #343434;
     width: 100%;
-    background-color:black;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
 }
-.header-logo{
-    width: 100%;
-    display: inline-block;
-    padding-top: 10px;
-}
-
 .logo{
     color: white;
-    font-size: 25px;
+    display:inline-block;
+    padding: 14px 16px;
     float: left;
-    padding: 10px 0 20px 15px;
-
 }
-.num {
-    color: #f9691f;
-    font-size: 45px;
-    padding-top: 10px;
-
+.logo h3{
+    margin-left: 150px;
 }
-.menu-x{
-    background-color: #686868;
-    height: 40px;
-    width: 100%;
-    display: block;
-
-}
-ul{
-   padding-left: 0;
-}
-.menu-x li {
-    padding: 10px;
-    border-right: 1px solid black ;
-    list-style: none;
-    float: left;
-
-}
-.menu-x a{
-    display: block;
-    color: #fff8f8;
+.menu a{
+    float: right;
+    color: #d8e4df;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-
+}
+.menu a:focus{
+    color:white;
 }
 
-.content-left{
-    width: 64%;
-    border: none;
-    background-color: white;
-    float:left;
-    margin:0 2.5% ;
-    padding: 10px;
+ul{
+    margin-right: 150px;
 }
-.content-right{
-    width: 29%;
-    border: none;
-    background-color: #d8e4df;
-    float: right;
-    height: 750px;
+li{
+    list-style: none;
 }
-.grey-bottom {
-    background-color: #686868;
-    height: 1px;
+
+.container{
     width: 100%;
-    display: inline-block;
-
+    height: 400px;
+    background-color: darkgrey;
 }
 img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 400px;
+}
+.content{
+    width: 80%;
+    margin-left: 10%;
+}
+.col_2{
+    width: 65%;
     float: left;
-    padding: 20px 20px 20px 0;
 }
-.section-block-content{
-    padding: 15px;
-    display: block;
+.col_1{
+    width: 30%;
+    float: left;
+    margin-left:5% ;
 }
-.text{
-    padding: 15px;
-}
-.read{
-    color: #f9691f;
 
+h2, p{
+    padding-top: 15px;
 }
-h3{
-    padding: 20px;
+button{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
 }
-.menu-y li{
-    padding: 8px 0;
-    list-style: none;
+
+.blue{
+    color: blue;
 }
-.menu-y a{
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    color: #f9691f;
-}
-p{
-    padding-bottom: 15px;
+.col_1 p{
+    padding-top:5px ;
 }
 footer{
-    background-color: black;
-    height: 50px;
-    width:100% ;
-    color: white;
-    float: right;
-    text-align: center;
-    font-size: 20px;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.col_1_bottom{
+    height: 40px;
+    background-color: rgba(155, 155, 155, 0.87);
+    width: 30%;
+    border-radius: 5px 5px 0 0;
+
 }
