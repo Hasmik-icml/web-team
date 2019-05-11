@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 25px 35px;
+    background: linear-gradient(to right,rgb(111,82,210),rgb(183,135,197),rgb(248,183,187));
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+#container{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+
+.white_block{
+    background: white;
+    text-align: center;
+    color: steelblue;
+    
+}
+.left-block{
+    width: 75%;
+}
+.right-block{
+    width: 25%;
+}
+.col-xs-12{
+    display: inline-block;
+    float: left; 
+}
+.inline{
+    display: inline-block;
+}
+img.inline {
+   position: sticky;
+   vertical-align: middle;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.grey-block{
+    background: rgb(242,242,242);
+}
+.form-block{
+    padding: 25px;
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+}
+
+.form-row{
+    padding: 20px 0;
+}
+
+.form-row label, .form-row input:not(#submit1):not(#submit){
+    width: 100%;
+}
+.form-row input:not(#submit1):not(#submit){
+    height: 30px;
+    margin-top: 5px; 
+    box-shadow: 1px grey;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.form-row button, .form-row input[type="submit"]{
+    background: rgb(4,160,217);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.row {
+margin: 0 7px;
+}
+.right-form-block{
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(4,160,217);
+}
+			
