@@ -5,8 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Firstproject</title>
+    <style>
+       html, body, header, .container, .content, .main-content, .row, .right-sidebar, .left-sidebar, .left-header{
+            display:inline-block;
+        }
+        header{
+            background:#2B2B2B;
+            width:100%;
+            color:white;
+            line-height: 40px;
+        }
+        .logo, .middle-header, .right-header{
+            display:inline-block;
+            float:left
+        }
+        .logo{
+            width:10%;
+        }
+        .middle-header{
+            width:70%;
+            
+        }
+        .middle-header h4{
+            padding-left:20px;
+            
+        }
+        .right-header h4 a{
+            text-decoration: none;
+            color:white;
+        }
+        .row, .right-sidebar{
+            display: inline-block;
+            float:left;
+        }
+        .main-content{
+            width:100%;
+        }
+        .right-sidebar{
+            width:35%;
+        }
+        .row{
+            width:65%;
+            background:#ECE8DD;
+            float:left;
+        }
+        .left-sidebar{
+            display:inline-block;
+            background:white;
+            width:70%;
+            margin-left:15%;
+            margin-right:15%;
+            margin-top:20px;
+        }
+
+        .left-title{
+            display: inline-block; 
+            float: left;
+            font-size: 10px;
+            text-align:left;
+            padding-top:10px;
+            color:#A44239;
+        }
+        .right-title{
+            display: inline-block; 
+            float: right;
+            font-size: 10px;
+            text-align:right;
+            padding-left:70px;
+            padding-top:10px;
+            color:#A44239;
+        }
+        .img-download{
+            height: 100px;
+            width: 80%;
+            border:1px solid #D5D5D5;
+            margin: 10px auto;
+            background:url(libs/img/dwnimg.png);
+            background-size:contain;
+            position:relative;
+        }
+        .img-download button{
+            position:absolute;
+            bottom:5px;
+            left:42%;
+            padding:5px;
+
+        }
+        .left-text{
+            text-align:center;
+        }
+        .browse-img{
+            display:inline-block;
+            float:left;
+            width:50%;
+            
+            
+        }
+        .little-img-download{
+            background:url(libs/img/drop.png);
+            width:90%;
+            height:120px;
+            background-size:cover;
+            position:relative;
+            
+        }
+        .little-img-download button{
+            position:absolute;
+            left:35%;
+            top:90px;
+            padding:3px;
+            border-radius:5px;
+            background:#7F7F7F;
+            color:white;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <div class="logo" style="background:#5DC3DA">
+                    <img src="libs/img/insta.png" style="width:100%">
+                </div>
+                <div class="middle-header">
+                    <h4>Intitled template</h4>
+                </div>
+                <div class="right-header">
+                    <h4><a href="#">Preview and test</a></h4>
+                </div>
+                
+            </header>
+            <div class="main-content">
+            <div class="row" >
+                        
+                    <div class="left-sidebar">
+                        <div class="left-header">
+                            <div class="left-title" >
+                                Use this area to offer a short preview of your emails content
+                            </div>
+                            <div class="right-title" >
+                                View this email in your browser
+                            </div>
+                            <div style="clear:left"></div>
+                            <div class="img-download">
+                                <button type="button">Browse</button>
+                            </div>
+                        </div>
+                        <div class="left-content">
+                            <div class="left-text">
+                                <h3 style="color:#A44239">DISEGNING YOUR EMAIL</h3>
+                                <h4>Creating an elegant email is simple</h4>
+                                <p>Now that you've selected a template to work with, 
+                                    drag in content blocks to define a structure of your message.
+                                    Don't worry you can always delete or rearrenge blocks
+                                    as needed.Then click design to define fonts , colors and styles.
+                                </p>
+                            </div>
+                            <div class="browse-img">
+                                <div class="little-img-download">
+                                    <button type="button">Browse</button>
+                                </div>
+                                <p>Your textcaption goes here.You can change
+                                    the position and the width of the caption 
+                                    from the blovk settings tab.
+                                </p>
+                            </div>
+                            <div class="browse-img">
+                                    <div class="little-img-download">
+                                            <button type="button">Browse</button>
+                                    </div>
+                                        <p>Your textcaption goes here.You can change
+                                            the position and the width of the caption 
+                                            from the blovk settings tab.
+                                        </p>
+                            </div>
+                        </div>
+                        <div class="left-footer">
+                            <i>Copyright &copy; *ICURRENT YEAR */LIST COMPANY 
+                                All rights reserved
+                            </i>
+                        </div>
+                     </div>
+                            
+           
+            </div>   
+                <div class="right-sidebar">
+                    <div class="right-header">
+                        <div class="form-group">
+                            <form action="" method="POST">
+                                <div class="head-style">
+                                    <h3>Body Design</h3>
+                                </div>
+                                <div class="style">
+                                   <h4>Body style</h4>
+                                   <div class="form-input">
+                                       <p> <label for="background" >Background</label></p>
+                                        <input type="color" name="background" id="background" class="form-input">
+                                    </div>
+                                    <div class="form-input">
+                                       <p> <label>Border top</label></p>
+                                        <select>
+                                            <option value="none" selected>None</option>
+                                            <option value="solid">Solid</option>
+                                            <option value="dashed">Dashed</option>
+                                            <option value="double">Double</option>
+                                        </select>
+                                        <input type="number" value=0 max=5 name="border-t" id="border-t">
+                                        <input type="color" name="border-color" id="border-color">
+                                    </div>
+                                </div>
+                                <div class="text">
+
+                                </div>
+                                <div class="button">
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
