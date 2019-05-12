@@ -1,0 +1,44 @@
+h1, h2{
+    text-align: center;
+}
+
+.first-row, .second-row{
+    width: 100%;
+    min-height: 250px;
+
+}
+
+.col{
+    width: 22%;
+    margin: 25px 45px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+footer{
+    background-color: red;
+    width: 100%;
+    min-height: 350px;
+}
+
+
+input, textarea{
+    color: white;
+    text-align: center;
+    border-radius: 11px;
+    background-color: red;
+    outline: none;
+    font-size: 17px;
+    margin: 38px 16px 46px 288px;
+    border: 1px solid white;
+}
+input{
+
+    width: 200px;
+    height: 30px;
+
+
+
+}
+
