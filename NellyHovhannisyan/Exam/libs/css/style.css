@@ -42,3 +42,8 @@ input{
     height: 30px;
 }
 
+::placeholder{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
