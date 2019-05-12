@@ -1,0 +1,51 @@
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    background-color: beige;
+    width: 20%;
+    margin-right: 5px;
+    
+    
+    
+    
+}
+nav ul li a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+header{
+    
+    width: 100%;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu li{
+    width: 100%;
+}
+.dropdown:hover .sub-menu{
+    display: inline-block;
+    position: absolute;
+    
+}
+
+.btn {
+    border: 1px solid;
+    background-color: blue;
+    padding: 10px 20px;
+    
+}
+.btn-block{
+    display: block;
+    float: left;
+    margin-top: 30px;
+    
+}
+
+
+
+
