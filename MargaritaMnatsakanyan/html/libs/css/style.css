@@ -1,37 +1,8 @@
-
-nav ul li{
-    float: left;
-    display: inline-block;
-    background-color: beige;
-    width: 20%;
-    margin-right: 5px;
-    
-    
-    
-    
-}
-nav ul li a{
-    padding: 5px 10px;
-    text-decoration: none;
-    color: black;
-    
-}
-
 header{
     
     width: 100%;
 }
-.sub-menu{
-    display: none;
-}
-.sub-menu li{
-    width: 100%;
-}
-.dropdown:hover .sub-menu{
-    display: inline-block;
-    position: absolute;
-    
-}
+
 
 .btn {
     border: 1px solid;
@@ -46,6 +17,11 @@ header{
     
 }
 
+.sub-menu{
+	display: none;
+}
 
-
+.item-content:hover .sub-menu{
+	display: block;
+}
 
