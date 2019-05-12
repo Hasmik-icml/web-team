@@ -7,7 +7,6 @@
 .container-content {
     width: 100%;
     display: flex;
-    flex-flow: column;
     float: left;
     vertical-align: top;
     padding: 5px;
@@ -15,8 +14,10 @@
 .container-content--left{
     width: calc(100%/2);
     background-color: white;
+    display: inline-block;
 }
 .container-content--right{
     width: calc(100%/2);
     background-color: rgb(87,195,241);
+    display: inline-block;
 }
