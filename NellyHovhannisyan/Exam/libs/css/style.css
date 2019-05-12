@@ -24,8 +24,9 @@ footer{
     width: 100%;
     min-height: 350px;
 }
-
-
+footer-bottoms{
+     display: inline-block;   
+}
 input, textarea{
     color: white;
     text-align: center;
