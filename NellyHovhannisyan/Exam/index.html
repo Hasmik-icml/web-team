@@ -15,16 +15,16 @@
     </header>
     <main>
         <div class="content">
-            <div class="first-row">
+            <div class="row">
                 <div class="col">
-                 <div class="icon-article">
-                     <i class="fab fa-android fa-5x"></i>
-                 </div>
-                    <div class="header-article">
-                        <h4>Lorem Ispum</h4>
+                   <div class="icon-article">
+                       <i class="fab fa-android fa-5x"></i>
                     </div>
+                    <div class="header-article">
+                       <h4>Lorem Ispum</h4>
+                     </div>
                     <div class="text-article">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto at debitis exercitationem qui quis quo vero.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto at debitis exercitationem qui quis quo vero.
                     </div>
                 </div>
                 <div class="col">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="second-row">
+            <div class="row">
                 <div class="col">
                     <div class="icon-article">
                         <i class="fab fa-android fa-5x"></i>
@@ -93,16 +93,22 @@
         <div class="footer-top-item"><h2>Get in Touch</h2></div>
         <div class="footer-top-item">
             <form method="POST" action="comment.php">
-                <div class="form">
+                <div class="form-row col-6">
                     <label for="name"></label>
                     <input type="text" placeholder="NAME" name="name" id="name">
-                    <label for="email"></label>
-                    <input type="email" placeholder="EMAIL" name="email" id="email">
                 </div>
-                <div class="form">
+				<div class="form-row col-6">
+				    <label for="email"></label>
+                    <input type="email" placeholder="EMAIL" name="email" id="email">
+				</div>
+                <div class="form-row col-12">
                     <label for="comment"></label>
                     <textarea rows="10" cols="78" placeholder="COMMENT" name="comment" id="comment"></textarea>
                 </div>
+				<div class="form-row col-12 text-center">
+				   <button type="submit">Send</button>
+				</div>
+			</form>
         </div>
     </div>
 
