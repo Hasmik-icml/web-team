@@ -1,7 +1,8 @@
 label{
-    width: 150px;
+    width: 50%;
     margin:10px 20px ;
     display:inline-block;
+    text-align: right;
 }
 .row-inputs{
    margin-top: 5px;
@@ -22,4 +23,13 @@ input{
 legend{
     text-align: center;
     font-size: 25px;
+}
+.gender{
+    width:auto ;
+}
+.row-inputs-gender{
+    margin-left: 50%;
+}
+#female, #male{
+    height: auto;
 }
