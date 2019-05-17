@@ -1,0 +1,46 @@
+@import "font-awesome.css";
+
+*{
+    padding:0;
+    margin: 0;
+}
+h1{
+    color: green;
+    text-align:center;
+    padding-top: 20px;
+}
+.dates{
+    width: 40%;
+    float: left;
+}
+h4{
+    text-align: center;
+    padding-top: 10px;
+}
+.row{
+    display: block;
+    margin: 20px;
+}
+.contact_img{
+    float: left;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+.form-right{
+    width: 60%;
+    float: left;
+}
+.inputs{
+   border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+button{
+   background-color: blue;
+   color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+}

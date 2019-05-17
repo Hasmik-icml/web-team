@@ -17,14 +17,18 @@ h1, h2{
     float: left;
     text-align: center;
 }
+.col>.icon-article>i {
+    color:red;
+}
 
 footer{
     background-color: red;
     width: 100%;
     min-height: 350px;
 }
-
-
+footer-bottoms{
+     display: inline-block;   
+}
 input, textarea{
     color: white;
     text-align: center;
@@ -39,6 +43,15 @@ input{
 
     width: 200px;
     height: 30px;
+<<<<<<< HEAD
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+    padding: 5px;
+=======
+>>>>>>> b558c2c8237b5e9c53b37c378009eb24bf60c91e
 }
 
 ::placeholder{
@@ -46,4 +59,3 @@ input{
     text-align: center;
     padding: 5px;
 }
-

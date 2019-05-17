@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewForm</title>
+    <link rel="stylesheet" type="text/css" href="libs/css/form.css">
+     <link rel="stylesheet" type="text/css" href="libs/css/styles.css">
+</head>
+<body>
+    <div class="container">
+       <h1 class="page-title"> Registration Form </h1>
+        <div class="form-container">
+            <form action="output.html" method="get">
+                <div class="form-row">
+                    <label for="username">Username <span class="color-red" title="Mandatory">*</span></label>
+                    <input type="text" class="user-info" name="username" id="user-username" autofocus="autofocus" placeholder="Your username" required>
+                </div>
+                <div class="form-row">
+                    <label for="password" title="a-z,A-Z,0-9,!-?">Password <span class="color-red" title="Mandatory">*</span></label>
+                    <input type="password" class="user-info cursor-pointer" name="password" id="user-password" placeholder="Your password" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email <span class="color-red" title="Mandatory">*</span></label>
+                    <input type="email" class="user-info" name="email" id="user-email" placeholder="Your email address you@example.com" autocapitalize="off"required>
+                </div>
+                <div class="form-row">
+                    <label for="country">Country</label>
+                    <select name="country" id="user-country" class="user-info cursor-pointer">
+                        <option value="" selected disabled>--Please select your country--</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="France">France</option>
+                        <option value="Finland">Finland</option>
+                        <option value="England">England</option>
+                    </select>
+                </div>
+                 <div class="form-row">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="user-age" placeholder="Select your age"  min="16" max="150" class="user-info cursor-pointer">
+                </div>
+                <div class="form-row">                   
+                    <label for="gender">Gender</label>
+                    <div class="user-info">
+                        <input type="radio" name="gender" value="male" checked>Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </div>
+                </div>
+                <div class="form-row">
+                        <label for="user-hair-color">Hair Color</label>
+                   <div class="user-info" >
+                        <input type="color" id="user-hair-color" value="#cc9900" class="user-info cursor-pointer" list>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="user-avatar">Upload image</label>
+                    <input type="file" id="user-avatar" name="avatar" accept="image/*" class="user-info cursor-pointer">
+                </div>
+                <div class="form-row" >
+                    <label for="message" class="message-label">Type your message</label>
+                    <textarea id="user-message" name="message" rows="5" cols="33" placeholder="Message..." class="user-info" autocapitalize="word"></textarea>
+                </div>
+                <div class="form-row">
+                  <label for="button"></label>
+                   <div class="user-info" style="display: inline-block">
+                        <input type="submit" value="Submit" class="button button-signup cursor-pointer">
+                        <input type="reset" value="Reset" class="button button-red cursor-pointer">
+                        <a href="login.html" target="_blank">
+                         <input type="button" value="Log In" class="button button-signin cursor-pointer">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

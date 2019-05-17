@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+          integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+          crossorigin='anonymous'>
+    <link rel="stylesheet" href="libs/css/style.css">
+</head>
+<body>
+   <div class="container">
+       <form action="/page.php" target="_blank">
+           <fieldset>
+               <legend>REGISTRATION</legend>
+               <div class="row-inputs">
+                   <label for="username" class="mystyle">Name</label>
+                   <input type="text" name="name" id="username" required >
+               </div>
+               <div class="row-inputs">
+                   <label for="email" class="mystyle">Name</label>
+                   <input type="email" name="email" id="email" placeholder="example@gmail.com" required >
+               </div>
+               <div class="row-inputs">
+                   <label for="password" class="mystyle">Enter password</label>
+                   <input type="text" name="name" id="password" required >
+               </div>
+               <div class="row-inputs">
+                   <label for="hairColor" class="mystyle">Enter preferred color</label>
+                   <input type="color" id="hairColor" value="blue">
+               </div>
+               <div class="row-inputs">
+                   <label for="age">Select your age</label>
+                   <input type="number" id="age" name="age"
+                          min="16" max="70" value="16" required>
+               </div>
+               <div class="row-inputs">
+                   <label for="image">Upload your avatar</label>
+                   <input type="file" id="image">
+               </div>
+               <div class="row-inputs"></div>
+               <div class="row-inputs-gender" >
+                   <label for="male"  class="gender">Male</label>
+                   <input type="radio" id="male" name="gender">
+                   <label for="female" class="gender">Female</label>
+                   <input type="radio" id="female" name="gender">
+               </div>
+               <div class="row-inputs">
+                 <label for="country">Enter your Country</label>
+                   <select  id="country">
+                       <option name="arm">Armenia</option>
+                       <option name="ru">Russia</option>
+                       <option name="geo">Georgia</option>
+                       <option name="fr">France</option>
+
+                   </select>
+               </div>
+               <div class="row-inputs">
+                   <label for="message">Enter comments</label>
+                   <textarea cols="30" rows="5" id="message"></textarea>
+               </div>
+               <div class="row-inputs">
+                   <button type="button" class="btn">Log out</button>
+                   <button type="submit" class="btn">Sign In</button>
+                   <button type="reset" class="btn">Enter</button>
+               </div>
+           </fieldset>
+       </form>
+   </div>
+</body>
+</html>
