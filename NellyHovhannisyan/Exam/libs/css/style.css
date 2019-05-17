@@ -7,7 +7,9 @@ h1, h2{
     min-height: 250px;
 
 }
-
+.col>.icon-article>i {
+    color:red;
+}
 .col{
     width: 22%;
     margin: 25px 45px;
@@ -37,8 +39,11 @@ input{
 
     width: 200px;
     height: 30px;
+}
 
-
-
+::placeholder{
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
 
