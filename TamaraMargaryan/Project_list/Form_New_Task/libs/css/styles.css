@@ -20,10 +20,14 @@ body {
     font-style: italic;
     text-align: center;
     margin: 0 0 30px;
+    border-bottom: 2px solid darkslateblue;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+    box-shadow: 0px 1px 10px lightblue;
 }
-.page-title,label{
+.page-title{
     color:darkslateblue;
-    text-shadow: 3px 1px 1px white;
+    text-shadow: 3px 1px 1px lightblue;
 }
 .container form{
     display: block;
@@ -43,6 +47,7 @@ select,input:not(.color):not([type="radio"])
 .user-info{
     width: 50%;
     display: inline-block;
+    color: navy;
 }
 .form-row{
     display: block;
@@ -52,10 +57,12 @@ select,input:not(.color):not([type="radio"])
 }
 label{
     padding-right: 65px;
+        color:darkslateblue;
+
 }
 .button{
     color: beige;
-    box-shadow: 1px 1px 4px;
+    box-shadow: 2px;
     border-radius: 6px;
     font-family:sans-serif;
     font-size: 18px;
@@ -86,5 +93,10 @@ label{
 }
 .color-red{
     color: #f44336;
+    text-shadow: none;
+    font-size: 20px;
 }
 
+::placeholder{
+    color: navy;
+}
