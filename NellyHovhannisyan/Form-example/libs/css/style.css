@@ -47,7 +47,10 @@ input{
     width: 20px;
     height: 20px;
 }
-
+#Hair-color {
+    width: 80px;
+    height: 30px;
+}
 form{
     margin-left: 268px;
 }
