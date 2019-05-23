@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, #content,.section-servises,.section-content{
+    width: 100%;
+}
+header{
+    background-color: rgb(33,37,41,0.7);
+    display: inline-block;
+    position: fixed;
+    z-index: 9999;    
+}
+.form-row button, .listing-btn a,.form-block-button>a, .content-block h1, .content-block p, .form-block-text h3,.social, .social i, .servise-btn>a{
+    color: white;
+}
+.header-block-left, .header-block-right, ul.menu>li, ul.menu>li:hover .dropdown-menu, .form-row, .line{
+    display: inline-block;
+}
+.header-block-left, .header-block-right{
+    margin: 30px 0px;    
+}
+.search-btn, .sign-btn, .listing-btn{
+    display: inline;
+    margin-left: 50px;   
+}
+.header-block-right{
+    width: 30%;
+    float: right;
+    padding-top: 10px;    
+}
+.header-block-left{
+    width: 70%;
+    float: left;    
+}
+.logo-block{
+    margin-left: 20px;    
+}
+.logo-block, .main-menu{
+    display: inline;    
+}
+.main-menu{
+    width: 50%;
+    float: right;
+    margin-right: 30%;
+    margin-top: 10px;
+}
+.dropdown-menu{
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px; 
+}
+.menu{
+    list-style-type: none;
+}
+ul.menu>li{
+    padding: 0 35px;    
+}
+ul.menu>li>a, .header-block-right>div>a, .dropdown-item{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-item{
+    display: block;
+    float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #6610f2;
+    width: 120px;
+    background-color: white;   
+}
+.dropdown-item:hover{
+    background-color: #6610f2;
+    color: white;
+}
+.menu i{
+    margin-left:10px;
+}
+ul.menu>li:hover .dropdown-menu{
+    position: absolute;
+    float:left;   
+}
+.listing-btn a{
+    background-color: #6610f2;
+    padding: 16px 20px;   
+}
+#content{
+    background: url(../img/bg.jpg);
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+}
+.content-block{
+    text-align: center;
+    padding-top: 250px;
+}
+
+.form-row{
+    margin-top: 20px;    
+}
+select, button{
+    width: 150px;
+    height: 50px;
+}
+.form-row button{
+    background-color: #6f42c1;    
+    border-style: none;
+}
+.form-block{
+    width: 40%;
+    padding: 40px 0px 50px 0px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #6610f2;
+    opacity: 0.9;
+}
+.form-block-button{
+    text-align: center;
+    margin-right: 31.4%;
+    margin-bottom: 9px;
+}
+.form-block-button>a{
+    margin-left: -4px;
+    width: 50px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid #6f42c1;
+    background-color: #6610f2;
+    opacity: 0.9;
+    padding: 10px 15px;
+}
+.form-block-button>a:last-child{
+    background-color: #6f42c1;
+}
+.content-block h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.content-block p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.form-block-text h3{
+    text-align: left;
+    margin-left: 40px;   
+}
+.social{
+    transform: rotate(90deg);
+    position: absolute;
+    left: -14%;
+    top:60%;
+    font-size: 25px;    
+}
+.social-title{
+    display: inline;
+    float: left;
+}
+.social-btns{
+    display: inline;
+    float: right;    
+}
+.social-btns>a>i{
+    padding-left: 5px;
+}
+.line{
+    width: 160px;
+    border-top: 1px solid white;
+    margin:0 5px 10px 5px;        
+}
+.servise-btn{
+    display: inline-block;
+    margin: 0 auto;
+    width: 150px;
+    background-color: #6610f2;
+    height: 150px;    
+}
+.servise-btn-block{
+    width: 60%;
+    margin: -70px auto;
+    text-align: center;   
+}
+.servise-btn>img,.servise-btn>a{
+    display: block;
+    text-align: center;   
+}
+.servise-btn>img{
+    margin: 20px auto;
+}
+.servise-btn>a{
+    text-decoration: none;   
+}
+.section-content-text{
+    text-align: center;
+    margin-top: 150px;
+}
+.section-content-text span{
+    color:#6610f2;
+}
+.section-content-text h2{
+    font-size: 40px;
+}
+.footer-text{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.footer-text p{
+    color: #848484;
+    font-size: 14px;
+}
+
