@@ -1,36 +1,35 @@
 *{
      margin: 0;
-    padding: 0;  
+     padding: 0;  
 }
 body{
-    background-color: #1e81ff;
+   
+    background-color: #f1f4f9;
 }
 label{
     
     display: none;
+
 }
 .main-container{
+ 
     width: 100%;
    
    }
-.main-content{
- 
-    border: 1px solid black;
-    background: linear-gradient(90deg,
-   #5976ec 0%,
-   #4a90e6 35%,
-   #3ba8e3 100%);
-     overflow: hidden; 
-}
+
 .header{
-     
+
+     border: 1px solid black;
+     background: linear-gradient(to right, #555688ad 0%,
+     #5e6bed 0%,#4794e6 57% ,#4794e6 50% ,#36b0e3 100%,
+     #2989d8 100%,#4794e6 100%,#36b0e3 100%);
+     clip-path: polygon(100% 0, 100% 82%, -1% 98%, 0 100%, 0 0);
  
-}
+ }
 .content-center{
    
     width: 70%;
     margin: auto;
-    
 }
 ul,li,a{
 
@@ -43,10 +42,12 @@ ul,li,a{
     display: inline-block;
     font-size: 16px;
     color: white;
+
 }
 .header-menu h4,.header-menu li{
 
    padding: 12px;
+
 }
 .header-logo h4{
   
@@ -57,6 +58,7 @@ ul,li,a{
 .header-logo{
     
     display: inline-block;
+
 }
 .header-logo img{
 
@@ -64,46 +66,56 @@ ul,li,a{
 }
 .header-nav{
 
-    display: block;
+     display: block;
      float: right; 
+
 }
 .frist-view-block{
     
     margin-top: 103px;
-    margin-bottom: 560px;
+    margin-bottom: 595px;
+
 }
 .form{
 
     float: right;
     background-color: white;
     padding: 44px 96px 48px 97px;
+
 }
 .text-block{
 
     display: block;
     width: 31%;
     float: left;
+
 }
 .form-row,select,.button{
 
     margin-top: 10px;
+
 }
 .form h4{
     
     padding-bottom: 10px;
+
 }
 .form input{
 
     width: 183px;
     height: 27px;
+
 }
 .form-row select,button{
 
     width: 100%;
     height: 27px;
+
 }
 select{
+
     clear: both;
+
 }
 .button button{
 
@@ -125,16 +137,45 @@ select{
 
     color: white;
     line-height: 23px;
+
 }
 .text-block button{
 
-    width: 90px;
-    padding: 11px;
+    width: 106px;
+    padding: 4px;
     box-sizing: content-box;
     background-color: #01c94c;
     border-radius: 14px;
     color: white;
     border: none;
     margin-top: 10px;
+
+}
+.info-block-content{
+
+    margin-top: 100px;
+    
+}
+.info-title{
+
+    text-align: center;
+
+}
+.info-title h5{
+   
+    color: #c1c0c6;
+    margin-bottom: 5px;
+
+}
+.info-block-item{
+  
+    display: inline-block;
+    margin-left: 96px;
+    margin-top: 63px;
+
+}
+.info-block-item h4{
+    
+    margin-bottom: 12px;
 
 }
