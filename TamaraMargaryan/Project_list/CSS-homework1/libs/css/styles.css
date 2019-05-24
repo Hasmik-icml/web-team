@@ -1,0 +1,334 @@
+/*Common design*/
+
+body{
+    height: 100vh;
+}
+body, nav ul{
+    margin: 0;
+    padding: 0;
+}
+body, .container, .portfolio-gallery, .logo, .service, .portfolio, .portfolio-head{
+    width: 100%;
+}
+.pointer{
+    cursor: pointer;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.font-18px{
+    font-size: 18px;
+}
+.grey{
+    color: #C3C8CE;
+}
+.red{
+    color: #F78666;
+}
+div[class*="circle"], .icon-oninput, .service-icon{
+    border-radius: 50%;
+}
+.red-circle-logo,.nav-button, .nav-button>a, .search-item:hover input#search-input, .icon-oninput, .slides-button{
+    background-color: #F78666;
+}
+red-circle-logo, .blue-square-logo, nav ul>li, .search-item, .portfolio-head h2{
+    display: inline-block;
+}
+header, .service-list, .portfolio-gallery{
+    display: grid;    
+}
+.logo, nav ul li>a, .service-shortinfo>a{
+    text-decoration: none; 
+}
+.service, .portfolio-head, .portfolio-head button {
+    font-family: 'Bree Serif', serif;
+}
+.red-button:hover{
+    color: #2E8EBE;
+    font-weight: 700;
+}
+
+
+/*Header design*/
+header{
+    grid-template-areas: 
+        "logo nav search";
+    grid-template-columns: 20% 50% 30%;
+    height: 50px;
+    align-items: center;
+    color: #515862; 
+}
+
+.logo{
+    grid-area: logo;
+}
+.red-circle-logo, .blue-square-logo{
+    width: 15px;
+    height: 15px;
+}
+
+.blue-square-logo{
+    background-color: skyblue;
+}
+
+nav, nav ul{
+    grid-area: nav;
+
+}
+nav ul>li{
+    width: 60px;
+    line-height: 51px;
+}
+nav ul>li:hover:not(.nav-button){
+    background-color: #CAF0FF;
+}
+li.active{
+    background-color: #12a3d6;
+}
+nav ul li>a{
+    color: #515862;
+    height: 25px;
+}
+.nav-button, .nav-button>a{
+    color: white;
+}
+.nav-button{
+    line-height: 22px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+.search{
+    grid-area: search;
+    text-align: left;    
+    padding-left: 10px;
+}
+.search-item{
+  width: 30px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.search-item input#search-input{
+      position: absolute;
+      width: 10px;
+      border: none;
+      font-size: 10pt;
+      padding-left: 35px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #fff;
+
+      -webkit-transition: width .55s ease;
+      -moz-transition: width .55s ease;
+      -ms-transition: width .55s ease;
+      -o-transition: width .55s ease;
+      transition: width .55s ease;
+}
+#search-input::placeholder{
+    color: white;
+}
+.search-item .icon{
+    position: absolute;
+    padding-left: 5px;
+    z-index: 1;    
+}
+.icon-oninput{
+    transform: rotate(90deg);
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+    height: 15px;
+    width: 15px;
+    font-size: 14px;
+    padding: 5px;
+}
+.search-item input#search-input:focus, .search-item input#search-input:active{
+    outline:none;
+    width: 150px;
+}
+ .search-item:hover input#search-input{
+    width: 150px;
+    height: 27px;
+}
+
+/*Slides Section*/
+
+.slides{
+    min-height: 400px;
+    background-image: url(../img/bgg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.slides-content{
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+}
+.slides-button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    color: white;
+}
+.slides-input-group{
+    position: absolute;
+    margin-top: 9%;
+    right: 10%;
+}
+
+.overlap{
+    background: #2E8EBE;
+    color: #CAF0FF;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 2px;
+    position: relative;
+    bottom: 15px;
+    line-height: 30px;
+    margin: auto
+}
+
+/*Service Info*/
+.service{
+    margin: 0;
+}
+.service-list{
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+}
+.slides, .overlap, .service-title, .service-shortinfo {
+    text-align: center;
+}
+.service-shortinfo{
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+.service-list--item {
+    padding: 0 20px 25px 20px;
+}
+
+.service-list, .portfolio-content{
+    width: 90%;
+    margin: auto;
+}
+
+.fa-laptop, .fa-shopping-cart, .fa-thumbs-up{
+    transform: rotate(270deg);
+    
+    text-shadow: 
+    #186293 -1px 1px,
+    #186293 -2px 2px,
+    #186293 -3px 3px,
+    #186293 -4px 4px,
+    #186293 -5px 5px,
+    #186293 -6px 6px,
+    #186293 -7px 7px,
+    #186293 -8px 8px,
+    #186293 -9px 9px,
+    #186293 -10px 10px,
+    #186293 -11px 11px,
+    #186293 -12px 12px,
+    #186293 -13px 13px,
+    #186293 -14px 14px,
+    #186293 -15px 15px,
+    #186293 -16px 16px,
+    #186293 -17px 17px,
+    #186293 -18px 18px,
+    #186293 -19px 19px,
+    #186293 -20px 20px,
+    #186293 -21px 21px,
+    #186293 -22px 22px,
+    #186293 -23px 23px,
+    #186293 -24px 24px,
+    #186293 -25px 25px;    
+}
+.service-icon {
+    margin: auto;
+    color: #fff;
+    background-color: #2E8EBE;  teal 
+    height: 44px;
+    width: 44px;
+    padding: 15px;
+    font-size: 38px;
+    overflow: hidden;
+    transform: rotate(90deg);
+
+    text-shadow: 
+    #186293 1px 1px,
+    #186293 2px 2px,
+    #186293 3px 3px,
+    #186293 4px 4px,
+    #186293 5px 5px,
+    #186293 6px 6px,
+    #186293 7px 7px,
+    #186293 8px 8px,
+    #186293 9px 9px,
+    #186293 10px 10px,
+    #186293 11px 11px,
+    #186293 12px 12px,
+    #186293 13px 13px,
+    #186293 14px 14px,
+    #186293 15px 15px,
+    #186293 16px 16px,
+    #186293 17px 17px,
+    #186293 18px 18px,
+    #186293 19px 19px,
+    #186293 20px 20px,
+    #186293 21px 21px,
+    #186293 22px 22px,
+    #186293 23px 23px,
+    #186293 24px 24px,
+    #186293 25px 25px;
+}
+.service-icon:hover{
+    box-shadow: 0px 0px 22px 3px #192C6D;
+}
+.service-shortinfo>a{
+    color: #3e9dd1;
+}
+
+/*Portfolio*/
+
+.portfolio{
+    background: #2F3F4F;
+    background-repeat: no-repeat;
+}
+.portfolio-head form {    
+    float: right;    
+}
+.portfolio-head button{
+    margin-top: 21px;    
+    width: 130px;
+    height: 40px;
+    background-color: #2190c1;
+    border: none;
+    border-radius: 5px;
+    color: #d5eaf3;
+}
+.portfolio-head button:hover{
+    box-shadow: 0px 0px 22px 3px #2E8EBE;
+}
+.portfolio-gallery{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 90px;
+    text-align: justify;
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.img-frame{
+    height: 235px;
+    background-color: #bebebe;
+    border: 15px solid #ffffff;
+    margin-bottom: 20px;
+}
+.img-shortinfo{
+    font-size: 12px;
+}
