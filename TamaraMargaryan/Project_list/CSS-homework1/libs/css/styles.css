@@ -7,7 +7,7 @@ body, nav ul{
     margin: 0;
     padding: 0;
 }
-body, .container, .portfolio-gallery, .logo, .service, .portfolio, .portfolio-head{
+body, .container, .portfolio-gallery, .logo, .service, .portfolio{
     width: 100%;
 }
 .pointer{
@@ -34,40 +34,35 @@ div[class*="circle"], .icon-oninput, .service-icon{
 .red-circle-logo,.nav-button, .nav-button>a, .search-item:hover input#search-input, .icon-oninput, .slides-button{
     background-color: #F78666;
 }
-red-circle-logo, .blue-square-logo, nav ul>li, .search-item, .portfolio-head h2{
-    display: inline-block;
-}
-header, .service-list, .portfolio-gallery{
-    display: grid;    
-}
-.logo, nav ul li>a, .service-shortinfo>a{
-    text-decoration: none; 
-}
-.service, .portfolio-head, .portfolio-head button {
-    font-family: 'Bree Serif', serif;
-}
+
 .red-button:hover{
     color: #2E8EBE;
     font-weight: 700;
 }
 
-
+.service, .portfolio-head, .portfolio-head button {
+    font-family: 'Bree Serif', serif;
+}
 /*Header design*/
 header{
+    display: grid;
     grid-template-areas: 
         "logo nav search";
     grid-template-columns: 20% 50% 30%;
     height: 50px;
     align-items: center;
+    text-align: center;
     color: #515862; 
 }
 
 .logo{
     grid-area: logo;
+    text-decoration: none;
 }
 .red-circle-logo, .blue-square-logo{
     width: 15px;
     height: 15px;
+    display: inline-block;
 }
 
 .blue-square-logo{
@@ -79,6 +74,7 @@ nav, nav ul{
 
 }
 nav ul>li{
+    display: inline-block;
     width: 60px;
     line-height: 51px;
 }
@@ -89,6 +85,7 @@ li.active{
     background-color: #12a3d6;
 }
 nav ul li>a{
+    text-decoration: none;
     color: #515862;
     height: 25px;
 }
@@ -112,6 +109,7 @@ nav ul li>a{
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
+  display: inline-block;
 }
 .search-item input#search-input{
       position: absolute;
@@ -161,6 +159,7 @@ nav ul li>a{
 
 .slides{
     min-height: 400px;
+    text-align: center;
     background-image: url(../img/bgg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -192,6 +191,7 @@ nav ul li>a{
     border-radius: 2px;
     position: relative;
     bottom: 15px;
+    text-align: center;
     line-height: 30px;
     margin: auto
 }
@@ -201,10 +201,11 @@ nav ul li>a{
     margin: 0;
 }
 .service-list{
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
 }
-.slides, .overlap, .service-title, .service-shortinfo {
+.service-title, .service-shortinfo {
     text-align: center;
 }
 .service-shortinfo{
@@ -293,13 +294,16 @@ nav ul li>a{
 }
 .service-shortinfo>a{
     color: #3e9dd1;
+    text-decoration: none;
 }
 
 /*Portfolio*/
-
 .portfolio{
     background: #2F3F4F;
     background-repeat: no-repeat;
+}
+.portfolio-head h2{
+    display: inline-block;
 }
 .portfolio-head form {    
     float: right;    
@@ -317,6 +321,7 @@ nav ul li>a{
     box-shadow: 0px 0px 22px 3px #2E8EBE;
 }
 .portfolio-gallery{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 90px;
     text-align: justify;
