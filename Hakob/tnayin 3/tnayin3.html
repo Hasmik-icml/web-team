@@ -1,0 +1,243 @@
+ <!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+
+<link rel="stylesheet"  href="libs/css/style.css">
+
+
+<body>
+
+<div class="container">
+	<header>
+		<div class="logo_div">
+			<img id="logo" src="libs/img/donald.png" alt="logo">
+		</div>
+
+		<div class="header_links_div" >
+			<a href="#" id="hd_link"> Get Loan</a>
+			<a href="#" id="hd_link"> Give Loan</a>
+			<a href="#" id="hd_link"> Loan Community</a>
+			<a href="#" id="hd_link"> Sign in</a>
+		</div>
+
+<div class="clear"></div>
+
+	</header>
+
+	<section class="first_section">
+	    <div class="first_section_div">
+
+<!-- Clinet request div -->
+		    <div class="fr_section_about_div">
+		    	<div class="about_title_div">
+		    		<p id="request_paragraph">Hi ifeoma you have received a loan request from your friend Richard</p>
+		    	</div>
+
+		    	<div class="about_paragraph_div">
+		    		<h3 id="client_h">Richard Henrdicks <p id="client_p">(View profile)</p></h3>
+		    		<h4 id="client_name"> Name</h4>
+		    		 
+		    	</div>
+
+		    	<div class="request_left_div">
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" type="text" name="phone" placeholder="+00-12-34-56-78-99">
+		    			<p id="credit_request_paragraph"> Phone</p>
+		    		</div>
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" type="text" name="crcsore" placeholder="(Request Score)">
+		    			<p id="credit_request_paragraph"> Credit Score</p>
+		    		</div>
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" list="months" type="text" name="loan" placeholder="Duration(Per months)">
+		    			<datalist id="months">
+		    				<option value="3 months"></option>
+		    				<option value="6 months"></option>
+		    				<option value="9 months"></option>
+		    				<option value="12 months"></option>	    				
+		    			</datalist>
+		    			<p id="credit_request_paragraph"> Loan Duration</p>
+		    		</div>
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" list="paytype" type="text" name="pay" placeholder="Instalments">
+		    			<datalist id="paytype">
+		    				<option value="Cash"></option>
+		    				<option value="Personal Cheque"></option>
+		    				<option value="Debit Card"></option>
+		    				<option value="Credit Card"></option>    				
+		    			</datalist>
+		    			<p id="credit_request_paragraph"> Repayment type</p>
+		    		</div>
+
+		    		
+		    	</div>
+
+
+	<!-- Client request div right part	    	 -->
+
+		    	
+		    	<div class="request_right_div">
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" type="text" name="location" placeholder="Armenia">
+		    			<p id="credit_request_paragraph"> Location</p>
+		    		</div>
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" type="number" name="quantity" placeholder="N 2 000 000.00 AMD" min="0" max="200000">
+		    			<p id="credit_request_paragraph"> Amount</p>
+		    		</div>
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" type="text" name="repayment" placeholder="77 448.00 AMD">
+		    			<p id="credit_request_paragraph"> Monthly repayment</p>
+		    		</div>
+
+
+		    		<div class="request_inp_divs">
+		    			<input id="request_input" type="date" name="date" placeholder="25.05.2019" min="25-05-2019" max="25-05-2020">
+		    			<p id="credit_request_paragraph"> Repayment Start Date</p>
+		    		</div>
+		    	</div>
+
+
+		    	<div class="request_btn_block">
+		    		<div class="button_block_lpart ">
+		    			<button id="accept"> Accept</button>
+		    		</div>
+		    		
+		    		<div class="button_block_rpart ">
+		    			<button id="decline" type="reset"> Decline</button>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+    
+    
+    
+		    <div class="fr_section_info_div">
+		    	<div id="info_title_block">
+		    		<h5 id="info_title_block_h5">WELCOME TO BORRPAL</h5>
+		    	</div>
+
+		    	<div id="info_text_block">
+		    		<p>What if you could access the funds you need <br>when you need it from friends,colleagues and<br> peers on mutually agreed terms?</p>
+		    	</div>
+
+
+		    	<div id="info_text_block_list">
+		    		<ul>
+		    			<li>Agreed Payment Date</li><br>
+		    			<li>Automated Awkward Moment
+		    				<p id="info_text_list">(auto request,auto accept/decline,<br>Automated Payback Process)</p>
+		    			</li>
+		    		</ul>
+		    	</div>
+
+		    	<div id="credit_inclusion_btn_block">
+		    		<button id="accept"> Credit Inclusion</button>
+		    	</div>
+		    </div>
+
+	    </div>
+    </section>
+
+
+
+	<section class="second_section">
+
+		<div class="title_div">
+			<p id="second_section_title"> HOW IT WORKS</p>
+		</div>
+
+
+		<div class="detail_divs">
+			<div class="signup_div">
+				<p id="signup_div_first_paragraph"> 01:Sign up</p>
+				<p id="signup_div_second_paragraph"> Provide details about you. We<br> lorem ipsum...</p>
+			</div>
+
+
+
+
+			<div class="empl_detail_div">
+				<div id="empl_detail_div_block">
+					<div id="small_div">
+						<span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+					</div>
+					<div id="empl_detail_inp_block_fr">
+					    <center><input id="employement_inp_first"     type="text" name="details" placeholder="EMPLOYEMENT DETAILS">
+					    </center>
+					    <center><input id="employement_inp_second"     type="text" name="Flname" placeholder="Full name">
+
+					    </center>
+					    <p id="paragraph">As it appearson a driver liscense</p>
+					</div>
+
+					<div id="birth_date">
+
+						<div class="birth_div">
+							<input id="once_date" type="number" name="day" min="1" max="31" placeholder="Day">
+						</div>
+
+						<div class="birth_div">
+							<input id="once_date" type="number" name="Month" min="1" max="12" placeholder="Month">
+						</div>
+
+						<div class="birth_div">
+							<input id="once_date" type="number" name="Year" min="2019" max="2100" placeholder="Year">
+						</div>
+						
+					</div>
+
+					<div id="eployement_radio_div">
+						<p id="radio_paragraph">Are you currentlyempoyed?
+				              <div id="switch">
+				              	<div id="toggle-on"></div>
+			                  </div>			            
+			            </p>			            
+					</div>
+					<p id="status_paragraph">Empoyement status</p>
+
+					<div>
+						<input id="job_sector" list="choose_list" type="text" name="person" placeholder="Personal">
+                          <datalist id="choose_list">
+                            <option value="Banking">
+                            <option value="Id">
+                            <option value="Person">    
+                          </datalist>
+					</div>
+					<p id="job_sector_paragraph">Job sector</p>		
+
+				</div>
+
+
+				
+			</div>
+
+			
+
+			<div>
+				
+
+		</div>
+		
+	</section>
+
+
+
+</div>
+
+</body>
+</html> 
