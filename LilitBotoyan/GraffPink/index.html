@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Palanquin:100&display=swap" rel="stylesheet">
 <body>
   <div class="container">
-    <header>
+    <header id="head">
     <div class="header_top">
         <div class="logo">
             <a href="index.html">
@@ -16,9 +16,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#head" onclick="my()">Home</a></li>
+                <li><a href="#about" onclick="my()">About Us</a></li>
+                <li><a href="#services" onclick="my()">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <button class="red_button" type="submit"><img src="libs/img/log_user.psd"> Login</button>
@@ -117,14 +117,20 @@
             </tr>
         </table>
         <div class="social">
-            <div class="circle_small"><img src="libs/img/Shape%202.png"></div>
-            <div class="circle_small"><img src="libs/img/twitter.png"></div>
-            <div class="circle_small"><img src="libs/img/dribbble.png"></div>
-            <div class="circle_small"><img src="libs/img/share.png"></div>
+            <div class="circle_small"><a href=""><img src="libs/img/Shape%202.png"></a></div>
+            <div class="circle_small"><a href=""><img src="libs/img/twitter.png"></a></div>
+            <div class="circle_small"><a href=""><img src="libs/img/dribbble.png"></a></div>
+            <div class="circle_small"><a href=""><img src="libs/img/share.png"></a></div>
         </div>
         <p>Copyright &copy; 2009-2019 Cssauthor.com</p>
     </footer>
 
 </div>
+  <script>
+      function my(argument){
+          argumnet = event.target;
+          argumnet.parentNode.classList.add('active');
+      }
+  </script>
 </body>
 </html>
