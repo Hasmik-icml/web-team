@@ -16,9 +16,12 @@ header{
     opacity: 0.9;
     padding-top: 35px;
     height: 90px;
+    position: fixed;
+    width: 100%;
 }
 .logo>span{
     color:#b73958 ;
+    margin-left: 4px;
 }
 .logo{
     font-family: 'Great Vibes', cursive;
@@ -26,9 +29,6 @@ header{
     margin-left: 10%;
     letter-spacing: 2px;
     font-size: 35px;
-}
-.logo>span{
-    margin-left: 4px;
 }
 nav{
     float: right;
@@ -105,12 +105,11 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-    /*margin-bottom:20px;*/
 }
 .circle_big{
      width: 178px;
      height: 178px;
-     border-radius: 50% ;
+     /*border-radius: 50% ;*/
      color: white;
      z-index: 48;
  }
@@ -137,7 +136,7 @@ footer {
 }
 .red>p{
     font-size: 15px !important;
-    padding-top: -55px !important;
+    margin-top: -75px !important;
     opacity: 0.8;
 }
 .orange{
@@ -165,19 +164,20 @@ footer {
 }
 table{
     text-align: left;
-
+    width: 45%;
     margin-left: 10%;
     margin-top: 37px;
     float: left;
 }
 th,td{
-width: 210px;
+width: 200px;
 }
 th{
     padding-bottom: 20px;
 }
 .social{
     display: flex;
+    width: 45%;
     justify-content: flex-start;
     margin-top: 40px;
 }
@@ -185,7 +185,6 @@ th{
 .circle_small{
     width:60px ;
     height:60px ;
-    border-radius: 50%;
     background-color: #696b6a;
     margin-right: 22px;
     line-height: 75px;
@@ -193,4 +192,5 @@ th{
 }
 div[class*="circle"]{
     text-align: center;
+    border-radius: 50%;
 }
