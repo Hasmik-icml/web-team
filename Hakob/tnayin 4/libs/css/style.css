@@ -1,0 +1,330 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+div{
+	display: block;
+}
+.clear{
+	clear: both;
+}
+
+.walpaper{
+	width: 100%;
+	
+}
+
+
+.first_sct{
+	width: 100%;
+	height: auto;
+	background-image:url(../img/flower.jpg);
+	background-repeat: no-repeat;
+	object-fit: cover;
+	padding-bottom: 60px; 
+}
+
+#walpaper_text{
+	font-size: 60px;
+	color: white;
+	text-align: center;
+    padding-top: 550px;
+
+}
+
+#walpaper_text_next{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	opacity: 0.6;
+}
+
+header{
+	width: 100%;
+	height: auto;
+	background-color: #E8EAE9;
+	opacity: 0.8;
+	/*z-index: 1001;*/
+
+}
+
+.logo{
+	
+	float: left;
+}
+.logo_text{
+	float: left;
+	margin: 20px 100px;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+ul li {
+	display: inline-block;
+	float: left;
+}
+.header_menu{
+	display: inline-flex;
+	float: right;
+	padding: 30px;
+    font-size: 20px;
+	
+}
+
+.header_ulist{
+	display: inline-block;
+	padding-right:20px;
+}
+.header_list{
+	margin: 20px;
+}
+
+
+.headr_btn_div{
+	padding: 20px 100px 0 0;
+}
+
+#sign{
+	font-size: 15px;
+    text-align: center;
+    width: 110px;
+    height: 25px;
+    border-radius: 5px;
+    background:  red;
+}
+
+#user{
+	margin-right: 10px;
+}
+
+.second-sct{
+	width: 100%;
+	height: auto;
+	border-bottom: 2px solid #F2F2F2;
+	padding-bottom: 40px;
+	
+}
+
+.text_block{
+	width: 100%;
+	height:auto;
+
+}
+
+.second_sct_text_lg{
+	text-align: center;
+	font-size: 35px;
+    padding-top: 70px;
+    color: black;
+}
+.second_sct_text_sm{
+	text-align: center;
+	font-size: 17px;
+    color: black;
+    margin-top: 10px;
+}
+
+.box_block{
+	width: 100%
+	height:auto;
+	display: flex;
+	padding-top: 70px;
+}
+#box_block{
+	width: 200px;
+	height: 200px;
+	/*background: red;    */
+    display: inline-block;
+    margin: auto;    
+    border-radius: 50%;
+}
+
+
+#ticket,#camera,#beer,#device{
+	font-size: 90px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;    
+    padding-top: 25%;
+}
+#beer{
+	opacity: 0.3;
+
+}
+#device{
+	width: 27%;
+}
+#circle_text,#camera_text,#beer_text,#device_text{
+	text-align: center;
+    color: white;
+    font-size: 17px;
+    opacity: 0.8;
+}
+#beer_text{	
+    opacity: 0.3;
+}
+#third_box_text{
+	z-index: 1;
+    position: absolute;
+    width: 10%;
+    margin-left: 30px;
+    margin-top: 35px;
+    text-align: justify;
+    color: white;
+    opacity: 0.7;
+}
+
+.box_block div:nth-child(1){
+	background: #4FB9F5;
+}
+.box_block div:nth-child(2){
+	background: green;
+}
+.box_block div:nth-child(3){
+	background: #FF5649;
+
+}
+.box_block div:nth-child(4){
+	background: #E48F25;
+}
+
+.third_walpaper{
+	width: 100%;
+	height: auto;
+
+}
+.info_box{
+	width: 100%;
+	display: inline-flex;
+    padding: 50px 100px;
+}
+.info_txt_box{
+    padding: 0 150px 0 40px;
+    text-align: justify;
+}
+
+
+/*harc
+vonc grem vor
+henc ay es divi
+meji p-n
+voch te p-in 
+class tam?*/
+
+#info_txt{
+	color: grey;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+footer{
+	background: #282828;
+	width: 100%;
+
+}
+
+.footer_menu{
+	width: 100%;	
+	display:flex;
+}
+.sub_menu{
+	width: 100%;	
+	display: inline-grid;
+	padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+.sub_menu:nth-child(1) {
+    padding-left: 140px;
+}
+
+#sub_txt{
+    padding: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+}
+
+ul {
+	display: grid;
+}
+
+ul li{
+	padding-top: 5px;
+}
+
+li a{
+	text-decoration: none;
+	color: white;
+	opacity: 0.7;
+	font-size: 20px;
+}
+
+li a:hover{
+	color: #FF9800;
+}
+.footer_icons{
+	width: 350%;
+
+}
+.social_icons_block{
+	width: 100%;
+    display: flex;
+    padding: 20px;
+}
+#social_icons{
+	width: 100%;
+    background: #696B6A;
+    display: inline;
+    padding: 10px;
+    margin: 60px 10px 0 10px;;
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+    font-size: 40px;
+    border-radius: 50%;
+    font-size: 57px;
+}
+
+
+#created_txt{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	opacity: 0.7;
+}
+#fb,#tw{
+	color: blue;
+}
+
+#fb:hover{
+	color:#3756FF;
+}
+
+#tw:hover{
+	color:#3756FF;
+}
+#bs{
+	color:#FF7800;
+}
+
+#bs:hover{
+	color:#FFAF3E;
+}
+#sh{
+	color: red;
+}
+#sh:hover{
+	color: #F34A00;
+}
+
+.header_list>a{
+	color: black;
+}
