@@ -1,0 +1,42 @@
+.menu-top{
+    background-color: #432eff;
+    padding: 10px 0;
+    /*width: 100%;*/
+    height: 60px;
+}
+nav {
+    float: right;
+}
+.main-menu>li>a{
+    color: white;
+    padding-left: 10px;
+}
+.category{
+    width: 25%;
+    font-size: 18px;
+    float: left;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.category:hover{
+    background-color: #9acaff;
+}
+.menu-left{
+    width: 25%;
+    float: left;
+    height: 460px;
+    background-color: white;
+}
+.menu-left,.slider-big, .slider-small {
+    float: left;
+}
+.vertical-menu{
+    padding-left: 0;
+}
+.vertical-menu>li{
+    list-style: none;
+    padding: 15px 3px;
+}
+.vertical-menu>li>a{
+    text-transform: capitalize;
+}
