@@ -1,0 +1,139 @@
+
+body{
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+div{
+ display: block;
+
+}
+
+.top-header-menu{
+    text-transform: uppercase;
+
+}
+.top-header-menu ul{
+    max-width: 600px;
+    float: none;
+    margin: auto;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+
+
+}
+
+ul li a{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+}
+ul.menu{
+    font-size: 18px;
+}
+
+ul.menu li a {
+    border-right: 1px solid white;
+}
+ul.menu li:last-child a{
+    border: none;
+}
+.social-list a {
+background: #b01111;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+}
+.top-header{
+    background: black;
+    min-width: 100%;
+    padding: 8px 0 ;
+    height: 25px;
+}
+.top-header-social{
+right: 20%;
+    position: absolute;
+}
+
+.top-header-social li a{
+    margin-right: 5px;
+}
+.logo{
+    width: 80px;
+    min-height: 20px;
+    background: #b01111;
+    color: white;
+    font-size: 70px;
+    padding: 40px 10px 10px;
+    position: absolute;
+    left: calc((100% - 600px)/2 - 120px);
+    left: -webkit-calc((100% - 600px)/2 - 120px);
+    left: -moz-calc((100% - 600px)/2 - 120px);
+
+}
+
+.button-header{
+    width: 100%;
+    min-height: 30px;
+    padding: 15px;
+    text-align: center;
+    max-width: 750px;
+    max-height: 49px;
+    overflow: hidden;
+    float: none;
+    margin: auto;
+}
+
+.head-img-title{
+    background: white;
+    position: relative;
+    z-index: 10001;
+    margin-top: -150px;
+    min-height: 150px;
+}
+
+.head-img-bg img{
+    max-height: 489px;
+
+
+}
+
+.head-title-content .img-block{
+    max-width: 170px;
+    background: gray;
+    padding: 48px 20px 0;
+border: 5px solid white;
+
+}
+
+
+.head-title-content .img-block +div{
+    max-width: calc(100% - 170px);
+    max-width: -moz-calc(100% - 170px);
+    max-width: -webkit-calc(100% - 170px);
+
+}
+
+.head-title-content>div{
+    display: inline-block;
+    float: left;
+}
+.head-title-content{
+    min-height: inherit;
+    position: absolute;
+top: -67%;
+}
+
+.title-text{
+    margin: 0;
+}
+
+t

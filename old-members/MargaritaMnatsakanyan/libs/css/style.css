@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../image/Main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.container{
+    width: 100%;
+    
+}
+header{
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+}
+.logo-block{
+    display: inline;
+    margin-left: 20px;
+}
+.main-menu{
+    
+    float: right;
+    display: inline;
+   
+}
+ul.menu>li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+ul.menu a{
+    text-decoration: none;
+    color: #BCBCBC;
+}
+ul.menu a:hover{
+    color: black;
+}
+.content{
+    text-align: center;
+    margin: 0 auto;
+}
+.title{
+    font-family: 'Labor Union', sans-serif;
+    font-style: normal;
+    font-size: 31px;
+    color: #CFA688;
+    margin-top: 20px;
+    
+}
+.date{
+    font-family: 'Labor Union', sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    color:#FDF8F8;
+}
+.timeless{
+    margin-left: 100px;
+    font-size: 16px;
+    color:#BCBCBC;  
+}
+.button{
+    font-size: 22px;
+    color: #FDF8F8;
+    background-color: black;
+    border-style: none;
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+/*
+footer{
+   display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+*/
+.moto{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  
+}
+.moto img{
+   width: 100%;
+    height auto;
+    margin: 0 auto;
+    
+    
+    
+}
+/*
+.social{
+    display: inline;
+    width: 70px;
+}
+.lang{
+    display: inline;
+    float: right;
+    font-size: 12px;
+    color: #FDF8F8;
+    margin-top: 100px;
+    
+}
+.social img{
+    padding-left: 10px;
+*/
+    
+}
