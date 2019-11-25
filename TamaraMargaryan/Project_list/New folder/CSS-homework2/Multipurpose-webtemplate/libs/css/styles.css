@@ -1,0 +1,265 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.header-background h4, .main-head h3, .main-head h5, .icon-div p, .main-icons--item>p, .main-info--row .text h3, .main-info--row .text p, .footer-content--left .item h4, .footer-content--left .item p, .copyright p{
+    font-family: "Univers LT";
+    font-weight: 300;
+}
+
+header>div, header>nav{
+    top: 0;
+}
+nav {
+    width: 100%;
+    float: none;
+    background: white;
+    opacity: 0.9;
+    z-index: 1;
+    position: absolute;
+}
+.nav-content {
+    max-width: 960px;
+    margin: auto;
+    height: 106px;
+    float: none;
+}
+.nav-content>div, .nav-menu>ul, .nav-menu>form, .main-icons>div, .nav-menu ul li, .nav-ul li>a, .main-info--row>div, .footer-content>div, .footer-content--left>div, .social-icons>div{
+    display: inline-block;
+}
+.nav-menu{
+    float: right;
+}
+.nav-logo form>button {
+    width: 130px;
+    height: 52px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    background: url(../img/Graff-pink.png) no-repeat;
+    cursor: pointer;
+}
+.header-button-form{
+    margin: 32px;
+    display: block;
+}
+
+.nav-ul li{
+    width: 118px;
+}
+.nav-ul li>a:hover{
+    transition: 1s ease;
+    border-bottom: 3px solid #454545; 
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+}
+.nav-menu ul li, .nav-ul li>a{
+    text-decoration-line: none;
+    color: font-size: 17px;
+    color: #454545;
+    font-family: "Segoe UI";
+}
+.header-button-form button{
+    width: 87px;
+    height: 27px;
+    border-radius: 3px;
+    border: none;
+    background-color: #de6d6e;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    outline: none;
+    cursor: pointer;
+}
+
+.header-button-form>img{
+    height: 13px;
+    width: 16px;
+    position: absolute;
+    top: 41px;
+    right: 97px;
+}
+.header-background{
+    width: 100%;
+    height: 587px;
+    background: url(../img/header-bg.png) no-repeat;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-background-text{
+    text-align: center;
+    padding-top: 300px;
+    
+}
+.header-background h1{
+    font-size: 69px;
+    color: #ffffff;
+    font-family: "Alte Haas Grotesk_ Bold";
+    font-weight: bold;
+}
+.header-background h4{
+    font-size: 25px;
+    color: #ffffff;
+    margin: auto; 
+}
+main{
+    width: 100%;
+}
+.main-head{
+    text-align: center;
+    position: relative;
+    top: 620px;
+}
+.main-head h3{
+    font-size: 35px;
+    color: #404040;
+}
+.main-head h5{
+    width: 834px;
+    margin: auto;
+    font-size: 17px;
+    color: #636363;
+}
+.main-icons{
+    position: relative;
+    top: 650px;
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+}
+.main-icons--item{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 24%;
+}
+.icon-div{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+.icon-div p{
+    width: 90px;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 6px;
+    padding-left: 7px;
+}
+.main-icons--item img{
+    padding-top: 15px;
+    width: 60px;
+}
+.main-icons--item>p{
+    position: relative;
+    top: -25px;
+    margin-top: 0;
+    color: #ffffff;
+    opacity: 0.5;
+}
+.blue{
+    background: #4eb9f4;
+}
+.green{
+    background: #6fc125;
+}
+.red{
+    background: #ff5649;
+}
+.orange{
+    background: #e48f23;
+}
+
+.main-info{
+    top: 700px;
+    position: relative;
+    max-width: 960px;
+    float: none;
+    margin: auto;
+}
+.main-info--row{
+    min-height: 132px;
+    margin-bottom: 72px;
+}
+.main-info--row>div {
+    float: left;
+}
+.main-info--row .img {
+    max-width: 199px;
+    margin-right: 15px;
+}
+.main-info--row .text {
+    max-width: 722px;
+}
+.main-info--row .text h3{
+    font-size: 27px;
+    color: #404040;
+    margin: 0;
+}
+.main-info--row .text p{
+    height: 161px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8b8b8b;
+    text-align: left;
+}
+
+footer{
+    top: 790px;
+    background: black;
+    position: relative;
+    color: #aeaeae;
+    min-height: 206px;
+}
+.footer-content{
+    max-width: 960px;
+    float: none;
+    margin: auto;
+}
+.footer-content--left{
+    max-width: 60%;
+}
+.footer-content--left>div {
+    margin-right: 30px;
+}
+.footer-content--left .item h4{
+    font-size: 21px;
+    line-height: 22px;
+    text-align: left;
+}
+.footer-content--left .item p, .copyright p{
+    font-size: 15px;
+    line-height: 6px;
+    text-align: left;
+}
+.footer-content--right{
+    max-width: 36%;
+    float: right;
+}
+.footer-content--right>div {
+    padding-left: 22px;
+    float: right;
+}
+.social-icons>div{
+    margin: 55px 15px 25px 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #696b6a;
+    padding: 3px 4px;
+    text-align: center;
+}
+.social-icons--item {
+    line-height: 69px;
+    vertical-align: middle;
+}
