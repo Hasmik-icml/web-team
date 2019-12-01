@@ -1,0 +1,75 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.wrraper{
+     width:70%;
+     margin: 0 auto;
+}
+header{
+     width:100%;
+     height: 400px;
+     background-color:rgb(8, 155, 240) ;
+     clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+     position: relative;
+}
+.head-contaoner{
+     display: block;
+     width: 50%;
+     
+     display: flex;
+     flex-direction: row;
+     justify-items: center;
+     justify-content: space-between;
+     position: absolute;
+     /* top:137px;
+     left:360px; */
+     top:29%;
+     left:33%;
+}
+.face{
+     width: 36%;
+}
+.head-text{
+     width: 64%;
+}
+
+/* Maysellf section */
+.mayself{
+     width: 100%;
+     height: 400px;
+     
+    
+}
+.myself-content{
+     margin: 0 auto;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+}
+
+
+.myself-text{
+     width: 50%;
+     
+}
+.myself-text h2{
+     font-size:50px;
+     margin-bottom: 20px;
+}
+.myself-text p{
+     font-size:22px;
+     line-height: 30px;
+}
+.mayself-img{
+     width: 40%;
+}
+.mayself-img img{
+     width: 100%;
+}
+
+
+
