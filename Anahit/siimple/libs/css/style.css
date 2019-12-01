@@ -97,7 +97,7 @@ main{
     margin-top: 5px;
 }
 
-.projects{
+.header{
     width: 100%;
     max-height: initial;
     display: inline-block;
@@ -165,27 +165,9 @@ strong{
     margin: auto;
 }
 
-.block-left{
+.item{
     width: 33.3%;
     float: left;
 
     
 }
-
-
-.block-center{
-    width: 33.3%;
-    float: left;
-    
-    
-}
-
-.block-right{
-    width: 33.3%;
-    float: left;
-    
-}
-
-
-
-
