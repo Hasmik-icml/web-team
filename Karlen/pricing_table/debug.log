@@ -1,0 +1,6 @@
+[1205/105545.785:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Отказано в доступе. (0x5)
+[1205/105545.802:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[1205/105545.807:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Отказано в доступе. (0x5)
+[1205/111522.687:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Отказано в доступе. (0x5)
+[1205/111522.705:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[1205/111522.709:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Отказано в доступе. (0x5)
