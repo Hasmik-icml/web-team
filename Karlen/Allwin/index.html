@@ -1,0 +1,375 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+<meta type="text/html" charset="UTF-8">
+<meta name="viweport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="" />
+<link rel="shortcut icon" href="libs/img/head_icon.png" type="image/x-icon"/>
+<title>lesson</title>
+
+<style>
+
+html, body {margin:0;
+            padding:0;
+           }
+
+*{box-sizing: border-box;
+            }
+
+img {width:100%;}
+
+.container {
+    display:block;
+    float:none;
+    margin:auto;
+    width:100%;
+    max-width:2700px;
+    min-height:1300px;
+}
+
+header {
+    width:100%;
+    display:block;
+    float:left;
+    min-height:325px;
+    background-color:#089BEF;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+}
+
+
+.header_image{
+    display:inline-block;
+    float:left;
+    width:254px;
+    height:initial;
+    margin-left:30%;
+    margin-top:97px;
+}
+
+.header_text {
+    display:inline-block;
+    float:left;
+    width:calc(60% - 254px);
+    -moz-width:calc(60% - 254px);
+    -webkit-width:calc(60% - 254px);
+    height:initial;
+    margin-top:90px;
+    padding-left:50px;
+}
+
+main{display:block;
+     float:left;
+     width:100%;
+     height:initial;
+
+     }
+
+.title {
+    display:block;
+    float:left;
+    width:100%;
+    height:initial;
+}
+
+.title div {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            font-family: sans-serif;
+            font-weight:bold;
+            color:white;
+            font-size:25px;
+            margin-top:10px;
+            }
+
+.title div:last-child{
+    font-size:15px;
+    font-weight:normal;
+}
+
+section {
+    display: flex;
+    float: left;
+    flex-flow: row wrap;
+    width:100%;
+    min-height:300px;
+    border-bottom:2px solid #EBEBEB;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+
+}
+
+
+.block {flex-basis:400px;
+        height:initial;
+}
+
+.block_image  {flex-basis:250px;
+                 height:initial;
+                 margin-left: 20px;
+                 margin-top: 15px;
+}
+
+.block div {width:100%;
+            height:initial;
+            font-family: sans-serif;
+            display:block;
+            float: left;
+            margin-top:20px;
+            }
+
+.block div:first-child{
+    font-size:25px;
+    color:#089BEF;
+}
+
+.section_title {display:block;
+                float:left;
+                width:100%;
+                height:initial;
+                text-align: center;
+                font-family: sans-serif;
+                font-size:25px;
+                color:#089BEF;
+                }
+
+
+
+.section_title div:last-child {color:black;
+                               font-size:17px;
+                               margin-top:20px;
+                               }
+
+.section-two_block {flex-basis:200px;
+        min-height:160px;
+        margin-left:10px;
+        margin-top:20px;   
+        }
+
+.section-three_title{display:block;
+                float:left;
+                width:100%;
+                height:initial;
+                text-align: center;
+                font-family: sans-serif;
+                font-size:25px;
+                font-weight:bold;
+                margin-top:20px;               
+        }
+
+section:last-child{
+                   justify-content: space-around;
+                   min-height:150px;
+                   }
+
+section:last-child div {
+    font-size:17px;
+    font-weight:bold;
+    
+    }
+
+footer {display:block;
+        float:left;
+        width:100%;
+        height:initial;
+        }
+
+footer .link_block {display:block;
+                    float: left;
+                    width:100%;
+                    height:initial;
+                    font-family: sans-serif;
+                    text-align: center;
+                    margin-top:20px;
+                    }
+
+.footer_bottom {display:flex;
+                flex-flow:row wrap;
+                justify-content: center;
+                align-items: center;
+                min-height:70px;
+                width:100%;
+               }
+
+.footer_bottom div {
+     text-align: center;
+     min-height: 30px;
+     line-height: 30px;
+     background-color:#F5F5F5;
+     margin-top:10px;
+     margin-left:10px;
+}
+
+
+
+@media all and (min-width:1500px){
+    .section-two_block {flex-grow: 0.1;
+}
+
+.block {flex-grow: 0.1;
+
+}
+
+.block div{
+    font-size:23px;
+}
+
+.block div:first-child{
+    font-size:35px;
+}
+
+
+.block_image  {
+    flex-grow: 0.1;
+}
+
+.title div {
+            font-size:35px;
+            }
+
+.title div:last-child{
+    font-size:25px;
+}
+
+.section_title {
+                font-size:35px;
+                }
+
+
+
+.section_title div:last-child {
+                               font-size:23px;
+                               }
+
+
+.section-three_title{
+                font-size:35px;
+        }
+
+section:last-child div {
+    font-size:23px;    
+    }
+
+    footer {font-size: 23px;
+                    }
+
+
+}
+@media all and (max-width:1000px){
+    
+    header {
+    width:100%;
+    display:block;
+    float:left;
+    background-color:#089BEF;
+    clip-path:none;
+}
+    
+    
+    .header_text {
+    display:block;
+    width:100%;
+    margin-top:5px;
+    text-align: center;
+    padding:0;
+}
+
+.header_image{
+    display:block;
+    float:none;
+    width:200px;
+    margin:auto;
+    height:initial;
+}
+
+.block {flex-basis:400px;
+        height:initial;
+        text-align: center;
+}
+
+
+.section-two_block {flex-basis:180px;
+                margin-top: 10px;
+        }
+
+section:last-child{flex-direction: column;
+                   min-height:150px;
+                   }
+
+section:last-child div {
+    margin-top:5px;
+    font-size:17px;
+    font-weight:bold;
+    
+    }
+
+}
+
+</style>
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header_image"><img src="libs/img/header_image.jpg" alt="image"/></div>
+                <div class="header_text">
+                    <div class="title">
+                        <div>Hi there,</div>
+                        <div>I'm Allwin.</div>
+                        <div>I am college student pursuing my bachelors degree in information Technology from 
+                            Coimbatore institute of Technology. Coimbatore India.
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <div class="block">
+                        <div>Myself,</div>
+                        <div>Fulltime <b>Stydent,</b> Classtime <b>Dreamer,</b> Freetime <b>Reader,</b> Fulltime <b>Designer,</b> Alltime <b>learner.</b></div>
+                        <div>Inquistiv <b>Worker,</b> Creativ <b>Thinker.</b></div>
+                        <div>Code Love, Design Passion, Music Life.</div>
+                    </div>
+                    <div class="block_image">
+                        <img src="libs/img/block-image.jpg" alt="image"/>
+                    </div>
+                </section>
+                <div class=section_title>
+                    <div>Interests</div>
+                    <div><b>Tech, Design</b> and <b>Music</b></div>
+                </div>
+                <section>
+                        <div class="section-two_block">
+                            <img src="libs/img/image_one.jpg" alt="image"/>
+                        </div>
+                        <div class="section-two_block">
+                                <img src="libs/img/image_two.jpg" alt="image"/>
+                            </div>
+                            <div class="section-two_block">
+                                    <img src="libs/img/image_three.jpg" alt="image"/>
+                                </div>
+                </section>
+                <div class=section-three_title>
+                    Stay Connected
+                    </div>
+                <section>
+                    <div><a href="">Twitter</a></div>
+                    <div><a href="">Facebook</a></div>
+                    <div><a href="">Google</a></div>
+                    <div><a href="">Instagram</a></div>
+                    <div><a href="">Youtube</a></div>
+                    <div><a href="">Yahoo</a></div>
+                </section>
+            </main>
+            <footer>
+                <div class="link_block"><a href="">iam@allwinwilliams.com</a></div>
+                <div class="footer_bottom">
+                     <div>&copy;Allwin Williams. 2016</div>                     
+                     <div><a href="">Back to top</a></div>                     
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
