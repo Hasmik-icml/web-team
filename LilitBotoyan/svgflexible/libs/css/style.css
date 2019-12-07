@@ -1,0 +1,103 @@
+@import "responsive.css";
+body{
+    margin: 0;
+    padding: 0;
+}
+header>img{
+    width: 100% !important;
+    height: 100%;
+    opacity: 0.3;
+}
+header{
+    clip-path: polygon(0 0%, 100% 0%, 100% 85%,50% 100%, 0% 85%);
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+.topmenu,.header-content{
+    position: absolute;
+}
+.topmenu{
+    width: 100%;
+    background-color: white;
+    top: 10px;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+ .blue{
+     color:#11b3d4;
+ }
+ li{
+     list-style: none;
+     padding-left: 20px;
+ }
+ a{
+     text-decoration: none;
+     color: black;
+ }
+ a:hover, a:focus{
+     color: #11b3d4;
+ }
+.container,nav>ul,.item-container,nav{
+    display: flex;
+    justify-content: space-between;
+   }
+nav>ul{
+    padding-left:0 !important;
+}
+.item-container{
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+.logo{
+    margin: 1em 0;
+}
+.btn{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    display: none;
+}
+.header-content{
+    top:20%;
+    width: 60%;
+    left:20%;
+    text-align: center;
+}
+.header-content>h1{
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+.header-content button{
+    background-color: #11b3d4;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 20px;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.item{
+    width: 30%;
+}
+.hexagon{
+    background:#11b3d4;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    line-height: 7;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.item-content>h3{
+    color: #11b3d4;
+
+}
