@@ -1,0 +1,268 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     
+}
+body{
+     background-color: #4B3065;
+     color:#fff;
+     height: auto;
+     
+}
+.content{
+     margin: 0 auto;
+     width: 100%;
+     max-width: 1200px;
+     display: grid;
+     grid-template-areas: 
+     'no no no no  '
+     'ban ban ban ban'
+     'box box box box  '
+     'box2 box2 box2 box2'
+
+     ;
+}
+.item1{
+     grid-area:no ;
+     grid-column: 1 /4 ;
+     max-width: 80%;
+     color:#fff;
+   
+}
+.nav{
+     max-width: 700px;
+     height: 70px;
+     display: flex;
+     justify-content: right
+     
+}
+.nav ul{
+     list-style-type: none;
+     display: flex;
+     justify-content:space-between;
+}
+.nav ul li{
+     display: inline-block;
+     line-height: 70px;
+     font-size: 1.5em;    
+}
+.nav ul li a{
+     display: block;
+     text-decoration: none;
+     padding: 0 50px;
+     color:#fff;    
+}
+.nav ul li a:hover{
+    background-color: #fd6e6e;    
+}
+.nav ul li:first-child{
+     background-color:#fd6e6e ;    
+ }
+
+
+.item2{
+     grid-area:no ;
+     grid-column: 4 /5 ;
+     background-color: #fd6e6e;
+     max-width: 100%;
+     display: inline-block;
+}
+.social{
+    padding-top: 20px;
+    padding-left: 10px;
+     
+}
+.fab{
+   color:#fff;  
+}
+
+
+/*Banner*/
+.banner{
+     grid-area: ban;
+     grid-column: 1 /5 ;
+     width: 100%;
+     height: 300px;
+     
+
+}
+.banner-content{
+     width: 50%;
+     height: 300px;
+     margin: 20px auto;
+     text-align: center;
+}
+.banner-content h1{
+     font-size: 6.250em;
+}
+.banner-content .left{
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+    font-size: 1.125em;
+    margin-bottom: 10px;
+}
+.banner-content .right{
+     width: 20%;
+     border-radius: 0px 10px 10px 0;
+     font-size: 1.125em;
+     margin-bottom: 10px;
+ }
+.banner-content p{
+     font-size: 1.563em;
+     margin-bottom: 10px;
+}
+.banner-content p:last-child{
+     font-size: 1em;
+     color:red;
+     
+}
+
+
+
+
+
+/*Main */
+.main {
+     grid-area: box;
+     display: flex;
+}
+.boxes1,.boxes2,.boxes3, .boxes4{
+     grid-column: 1 /2 ; 
+     background-color: lightblue;
+     width: 300px;
+     height: 300px;
+     background: -webkit-linear-gradient(-45deg, #cb60b3 0%,#850b64 50%,#432C5A 51%,#432C5A 100%);, #432C5A 50%);
+  
+}
+.boxes1{
+     grid-column: 1 /2 ; 
+     padding: 50px; 
+     text-align: center;  
+}
+.boxes1 .hr{
+     
+     width: 20px;
+     margin: 10px auto;
+     height: 5px;
+     background-color: #fff;
+}
+.boxes1 p:last-child{
+     color:red;
+}
+
+.boxes2{
+     grid-column: 2 /3 ;
+     
+     background: -webkit-linear-gradient(-45deg, #cb60b3 0%,#850b64 50%,#432C5A 51%,#432C5A 100%);, #432C5A 50%);
+
+}
+.box-content{
+     display: block;
+     width: 200px;
+     height: 200px;
+     margin: 30px auto;
+}
+.box-content img{
+     display: block;
+     width: 100px;
+     height: 100px;
+    margin: 70px auto;
+}
+.box-content p{
+     text-align: center;
+     font-size: 1.875em;
+     text-transform: uppercase;
+     font-weight: 700;
+     
+}
+.main2{
+     grid-area: box2;
+}
+
+
+
+
+
+
+/*-- Responsive   --*/
+/* Laptot */
+@media all and (max-width:1199px) and (min-width: 992px){
+     .content{
+         grid-template-areas: 
+          'no no no no '
+          'ban ban ban ban '
+          'box box box  box '
+          'box2 box2 box2  box2'
+     ;   
+     }
+     .item1{
+          grid-column: 1 /4 ; 
+     }
+     .item2{
+          grid-column: 4 /5 ; 
+     }
+     
+ }
+
+ /* Tablet Planshet */
+ @media all and (max-width: 991px) and (min-width: 768px){
+     .content{
+          grid-template-areas: 
+           'no no no  '
+           'ban ban ban '
+           'box box  box  '
+           'box2 box2 box2 '
+      ;   
+      }
+      .item1{
+          grid-column: 1 /3 ; 
+     }
+     .item2{
+          grid-column: 3 /4 ; 
+     }
+ }
+
+ /* Large Mobiles, small tablets */
+ @media all and (max-width: 767px) and (min-width: 480px){
+     .content{
+          grid-template-areas: 
+           'no no   '
+           'ban ban  '
+           'box box   '
+           'box2 box2  '
+      ;   
+      }
+      .item1{
+          grid-column: 1 /2 ; 
+     }
+     .item2{
+          grid-column: 2 /3 ; 
+     }
+     .main{
+          
+     }
+ }
+
+ /* Mobiles */
+ @media all and (max-width: 479px){
+     .content{
+          grid-template-areas: 
+           'no  '
+           'ban '
+           'box  '
+           'box2 '
+      ;   
+      }
+      .item1{
+          grid-column: 1 /1 ; 
+     }
+     .item2{
+          grid-column: 1 /1 ; 
+     }
+ }
+
+
+
+
+

@@ -17,7 +17,7 @@ header{
 .head-contaoner{
      display: block;
      width: 50%;
-     
+     color:#fff;
      display: flex;
      flex-direction: row;
      justify-items: center;
@@ -38,9 +38,7 @@ header{
 /* Maysellf section */
 .mayself{
      width: 100%;
-     height: 400px;
-     
-    
+     height: 400px;    
 }
 .myself-content{
      margin: 0 auto;
