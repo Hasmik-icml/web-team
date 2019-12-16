@@ -21,14 +21,9 @@ header{width: 100%;
     float: none;
     margin: auto;
     margin-top: 5px;
-    
-
-    
+        
 }
 
-@media (max-width: 640px){
-    .header-boxes { width: 100%;}
-}
 .header-boxes-item-right{
     width: 70%;
     min-height: initial;
@@ -36,9 +31,7 @@ header{width: 100%;
     float: right;
     margin-top: 5px;
     text-align: right;
-    
-    
-   
+       
 }
 .logo-contacts-right{
     width:50px;
@@ -47,8 +40,6 @@ header{width: 100%;
     float: right;  
     
 }
-
-
 
 .header-boxes-item-left{
     width: 70%;
@@ -84,9 +75,7 @@ header{width: 100%;
     text-align: right;
     
 } 
-@media (max-width: 640px){
-    .logo-brand { width: 100%;}
-    }  
+ 
 .brand{
     width: 100%;
     min-height: initial;
@@ -105,10 +94,7 @@ nav {
     float: left;
     
 }
-@media (max-width: 640px){
-    nav { width: 100%;}
-    
-    }  
+ 
 ul{
     list-style: none; 
     width: 100%; 
@@ -168,9 +154,6 @@ main .text {
     color: #B4B6B8;
     
 }
-@media (max-width: 640px){
-    .text-top-left { width: 100%;}
-    }
 
 .text-top-right{
     display: inline;
@@ -180,9 +163,7 @@ main .text {
     color: white; 
 
 }
-@media (max-width: 640px){
-    .text-top-right { width: 100%;}
-    }
+
 
 .solid{
     display: block;
@@ -238,12 +219,7 @@ main .text {
 }
 
 
-@media (max-width: 640px){
-    .contact-us { width: 100%;}
-    }
-    @media (max-width: 640px){
-        .our-work { width: 100%;}
-    }
+
 
 article{
     width: 100%;
@@ -285,7 +261,6 @@ article{
     border: 1px solid black;
     
 }
-
 
 
 .icon{
@@ -341,7 +316,16 @@ a:active{
 }
 
 
-@media (max-width: 640px){
+@media all and  (max-width: 640px){
     .block  { width: 100%;}
+    .our-work { width: 100%;}
+    .contact-us { width: 100%;}
+    .text-top-right { width: 100%;}
+    .text-top-left { width: 100%;}
+     nav { width: 100%;}
+    .logo-brand { width: 100%;
+                  text-align: center;}
+    .header-boxes { width: 100%;}
+    
 }
 
