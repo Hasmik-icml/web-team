@@ -118,8 +118,7 @@ header{
     display: block;
     float: none;
     margin: auto;
-    margin-top: 5px;
-    
+    margin-top: 5px;   
     color: #8a62b8d8;
 
 }
@@ -215,13 +214,13 @@ main{
     padding: 15px;
     
 }
-.solid{
+.main-boxes .solid{
     width: 6%;
     min-height: 2px;
     background-color: #fffff0;
     position: absolute;
     margin-top: 130px;
-    margin-left: 60px;
+    margin-left: 5.5%;
     margin-bottom: 10px;
     
 }
