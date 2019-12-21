@@ -219,8 +219,6 @@ main .text {
 }
 
 
-
-
 article{
     width: 100%;
     min-height: 300px;
@@ -240,21 +238,21 @@ article{
 }
 
 .block{
-    width: 24.58%;
+    width: 24%;
     display: inline-block;
-    float: none;
+    float: left;
     margin: auto;
+    margin-left: 1%;
     min-height: initial;
     margin-top: 0px;
     
 }
 .block-item{
     display: block;
-    width: 90%;
-    float: none;
+    width: 100%;
+    float: left;
     margin: auto;
-    margin-top: 25px;
-    
+    margin-top: 25px;    
     min-height: 200px;
     background-color: #F0F0F0;
     padding: 35px;
@@ -316,7 +314,7 @@ a:active{
 }
 
 
-@media all and  (max-width: 640px){
+@media all and  (max-width: 767px){
     .block  { width: 100%;}
     .our-work { width: 100%;}
     .contact-us { width: 100%;}

@@ -44,8 +44,9 @@
             <div class="logo-brand">
                 <div class="brand">Squares</div>
             </div>
-            <nav>         
-                <ul>
+            <nav>
+                <button class="nav-btn">MENU</button>    			
+                <ul class="menu">
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Servises</a></li>
@@ -55,6 +56,25 @@
                     
                 </ul>
             </nav>
+			<style>
+			@media all and (min-width: 768px){
+			  .nav-btn{
+			     display: none;
+			  }
+			}
+			@media all and (max-width: 767px){
+			.menu{
+			display: none;
+			 }
+			 nav:hover .menu{
+			   display: inline-block;
+			 }
+			 nav .menu li{
+			   width: 100%;
+			 }
+			}
+			
+			</style>
         </div>
         <main style="background: url(libs/img/images/squares.jpg) repeat-x center top ">
 
