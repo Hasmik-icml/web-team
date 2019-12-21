@@ -198,18 +198,18 @@ main .text {
 }
     
 .contact-us {
-    border: 1px solid aliceblue;
+    border: 1px solid #f0f8ff;
     width: 46%;
     min-height: 35px;
     padding: 5px;
     text-align: center;
-    background-color: aliceblue ;
+    background-color: #f0f8ff ;
     float:right;
     
 }
 
 .our-work{
-    border: 1px solid aliceblue;
+    border: 1px solid #f0f8ff;
     width: 46%;
     min-height: 35px;
     padding: 5px;
@@ -256,7 +256,7 @@ article{
     min-height: 200px;
     background-color: #F0F0F0;
     padding: 35px;
-    border: 1px solid black;
+    border: 1px solid #000000;
     
 }
 
@@ -307,10 +307,10 @@ a{
     color: #77C2E6 ;
 }
 a:hover{
-    color: black;
+    color: #000000;
 }
 a:active{
-    color: blue;
+    color: #0000ff;
 }
 
 
