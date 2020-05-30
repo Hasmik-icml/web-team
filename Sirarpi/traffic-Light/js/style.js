@@ -4,7 +4,7 @@ var light_items = document.getElementsByClassName('lightItem')
 let active = 0;
 
 setInterval(function () {
-        light_items[active].className = "lightItem"
+       
         active++
 
         if (active === light_items.length  ){
