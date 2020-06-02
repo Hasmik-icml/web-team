@@ -1,4 +1,4 @@
-setInterval(Clock,500);                                  // часы
+setInterval(Clock,500);                                  
  
 var newSec = document.getElementById("sec");
 var newMin = document.getElementById("min");
