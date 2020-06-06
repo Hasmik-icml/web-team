@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+</head>
+<body>
+
+    <div id="watch">
+        <div id="hour"></div>
+        <div id="minut"></div>
+        <div id="secund"></div>
+    </div>
+
+  <!--  <audio id="player" src="libs/audio/tik-tak.mp3">
+    </audio>   -->
+
+    <script>
+      var secund = document.getElementById("secund");
+      var minut = document.getElementById("minut");
+      var hour = document.getElementById("hour");
+      var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+       '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
+        '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', 
+        '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', 
+        '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', 
+        '58', '59', '60'];
+
+   /*   for(var i = 0; i<=60; i++){
+              arr.push(i);
+          };*/
+
+          var j = 1;
+
+
+    setInterval(function(){
+            
+        arr.forEach(function(key, value){
+
+        switch(key){
+          case secund.innerText:
+          j = value + 1;
+          break;
+          default:
+
+        }    
+
+        });
+
+
+        if(j === 60){
+            j = 0
+            minut.innerText = Number(minut.innerText) + 1;
+        };
+
+        if(Number(minut.innerText) === 60){
+            minut.innerText = 0;
+            hour.innerText = Number(hour.innerText) + 1;
+        };
+
+
+        secund.innerText = arr[j];
+        console.log(secund.innerText);
+
+
+
+
+      }, 1000);
+
+
+
+    </script>
+
+    
+    <style>
+
+    #watch{
+        border:1px solid black;
+        display:grid;
+        grid-template-columns:auto auto auto;
+        width:400px;
+        height:100px;
+        float: none;
+        margin: auto;
+    }
+    #watch>div{
+        border:1px solid black;
+        font-size:60px;
+        text-align: center;
+        font-weight:bold;
+        padding-top:15px;
+    }
+    
+    
+
+
+    </style>
+
+
+</body>
+</html>

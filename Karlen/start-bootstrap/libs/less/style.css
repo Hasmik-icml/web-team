@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.container {
+  display: inline-block;
+  float: none;
+  margin: auto;
+  width: 100%;
+}
+header {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 55px;
+  background-color: #343a40;
+}
+header .header-title {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  color: white;
+  font-size: 25px;
+  padding: 13px 0 0 10%;
+}
+header .header-menu {
+  display: inline-block;
+  float: right;
+  width: calc(100% - 300px);
+  -moz-width: calc(100% - 300px);
+  -webkit-width: calc(100% - 300px);
+}
+header .header-menu .mobile-menu {
+  display: none;
+}
+header .header-menu ul {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 10%;
+}
+header .header-menu ul li {
+  display: inline-block;
+  float: right;
+  font-size: 20px;
+  margin-right: 3%;
+}
+header .header-menu ul li a {
+  text-decoration: none;
+  color: #8e9194;
+}
+header .header-menu ul li a:hover {
+  color: white;
+}
+main {
+  display: inline-block;
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+  min-height: 300px;
+}
+main .main-business {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 100px;
+  grid-column-gap: 10px;
+  margin-top: 40px;
+}
+main .main-business .main-business-img img {
+  border-radius: 3px;
+}
+main .main-business .main-business-about {
+  display: grid;
+}
+main .main-business .main-business-about div {
+  padding: 15px 5px 0;
+}
+main .main-business .about-title {
+  font-size: 37px;
+}
+main .main-business .about-text {
+  font-size: 17px;
+}
+main .main-business .about-button input {
+  font-size: 17px;
+  padding: 5px;
+  background-color: #017bff;
+  color: white;
+  border-radius: 3px;
+}
+main .main-row {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 115px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #6c757d;
+  border-radius: 3px;
+  font-size: 18px;
+  padding-top: 40px;
+}
+main .main-cards {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 250px;
+  padding-top: 40px;
+}
+main .main-cards .main-card {
+  display: inline-block;
+  float: left;
+  width: 33.333%;
+  min-height: 250px;
+}
+main .main-cards .main-card .main-card-block {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 90%;
+  min-height: 280px;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+}
+main .main-cards .main-card .main-card-block div {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding: 15px 5px 10px;
+}
+main .main-cards .main-card .main-card-block .block-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+main .main-cards .main-card .main-card-block .block-text {
+  font-size: 18px;
+}
+main .main-cards .main-card .main-card-block .block-button {
+  background-color: #f7f7f7;
+}
+main .main-cards .main-card .main-card-block .block-button input {
+  background-color: #017bff;
+  color: white;
+  padding: 7px;
+  border-radius: 3px;
+}
+footer {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 90px;
+  background-color: #343a40;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 60px;
+}
+@media all and (max-width: 1000px) {
+  main .main-cards .main-card {
+    width: 50%;
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: 767px) {
+  main .main-business {
+    grid-template-columns: 100%;
+  }
+  main .main-cards .main-card {
+    width: 80%;
+    margin-left: 10%;
+  }
+  header .header-title {
+    width: 50%;
+    font-size: 22px;
+    padding: 13px 0 0 5%;
+  }
+  header .header-menu {
+    width: 50%;
+  }
+  header .header-menu ul {
+    display: none;
+  }
+  header .header-menu ul li {
+    display: block;
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+  }
+  header .header-menu .mobile-menu {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin: 15px 20px 0 0;
+  }
+  header .header-menu:hover ul {
+    display: block;
+    position: absolute;
+    width: 50%;
+    background-color: brown;
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 550px) {
+  main .main-cards .main-card {
+    width: 100%;
+    margin-left: 0;
+  }
+  main .main-row {
+    padding-top: 20px;
+  }
+}
+@media all and (min-width: 1400px) {
+  header .header-title {
+    width: 30%;
+  }
+  header .header-menu {
+    width: 70%;
+  }
+}
