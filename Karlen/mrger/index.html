@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrger</title>
+</head>
+<body>
+
+<div id="select_block">
+    
+</div>
+
+<div id="items">
+
+</div>
+
+
+
+<script>
+
+const select_block = document.querySelector("#select_block"),
+item_model = document.querySelector("#items");
+
+var items = ["mrger", "banjarexenner"];
+
+var mrger = [
+    {
+        "name": "xndzor",
+        "price": 150
+    },
+    {
+        "name": "tandz",
+        "price": 120
+    },
+    {
+        "name": "mandarin",
+        "price": 160
+    }
+], banjarexenner = [
+    {
+        "name": "lolik",
+        "price": 50
+    },
+    {
+        "name": "varung",
+        "price": 90
+    }
+];
+
+
+var all = create("div");
+all.className = "all";
+all.innerHTML = "All";
+select_block.append(all);
+
+
+var list = document.createElement("ul");
+list.className = "items_list"
+
+for(var i = 0; i<items.length; i++){
+    var li = document.createElement("li");
+    li.innerHTML = '<a data-href="' + items[i] + '" style ="text-transform:capitalize">'+items[i]+'</a>';
+    list.append(li);
+}
+
+
+select_block.append(list);
+
+items.forEach(function(key, value){
+    switch(key){
+        case "mrger": {
+            mrger.forEach(function(key, value){
+                var product = product_model(key);
+                item_model.append(product);
+            })
+        };
+        break;
+        case "banjarexenner":{
+            banjarexenner.forEach(function(key, value){
+                var product = product_model(key);
+                item_model.append(product);
+            })
+        }
+        break;
+        default:
+    }
+});
+
+function product_model(obj){
+    var model = create("div");
+    model.className = "product_model";
+    var title = create("h1");
+    title.innerHTML = obj.name;
+    title.className = "title";
+    var price = create("div");
+    price.innerHTML = obj.price;
+    price.className = "price";
+    var img = create("img");
+    var form = create("form");
+    form.style.padding = "10px";
+    form.innerHTML = "<button id='button' type='button' style='padding:5px' value='Buy Now'>Buy Now</button>"
+    model.append(img, title, price, form);
+    return model;
+
+}
+window.onload = function(){
+    item_model.style.display = "none";
+}
+
+all.onclick = function(){
+    item_model.style.display = "flex";
+}
+
+
+function create(elem){
+    return document.createElement(elem);
+}
+
+</script>
+
+<style>
+
+#select_block{
+display:flex;
+}
+
+#select_block .all {
+  padding:5px 10px;
+}
+
+#select_block ul {
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+#select_block ul li{
+    display:inline-block;
+    padding:5px 10px;
+}
+
+#items{
+    display:flex;
+    justify-content: space-around;
+
+}
+#items .product_model{
+    text-align: center;
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+    
+ <!--   Xndzor, tandz.....
+     
+    <div id="select_fruit">
+
+    </div>
+
+    <div id="result">
+    Result: 
+    </div>
+
+<script>
+
+var fruits = ["xndzor", "tandz", "mandarin", "apelsin", "banan"];
+
+const select_div = document.getElementById("result");
+
+var row = {"user_name": "admin",
+           "user_pass": "pass",
+            "user_nicename": "admin"};
+
+var select_Elem = document.createElement("select");
+
+for(var i = 0; i<fruits.length; i++){
+    var option = document.createElement("option");
+    option.innerHTML = fruits[i];
+    select_Elem.append(option);
+}
+
+select_Elem.onchange = function(){
+
+    select_div.innerHTML = 'Result: ' + select_Elem.value;
+}
+console.log(select_div);
+
+window.onload = function(){
+    select_div.innerHTML = "Result: " + select_Elem.children[0].innerHTML;
+}
+
+
+
+document.getElementById("select_fruit").append(select_Elem);
+
+</script>    -->
+
+
+</body>
+</html>

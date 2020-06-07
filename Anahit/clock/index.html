@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClockDocument</title>
+    <style>
+        body{
+            background:lightseagreen;
+            color: #fff;
+
+        }
+        #date{
+            position: absolute;
+            top: 45%;
+            left:37.5%;
+            text-align: center;
+            border: 1px solid #fff;
+            width: 25%;
+            min-height: 5%;
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="date">
+
+    </div>
+
+
+    <script>
+
+        var clock = setInterval(myTymer, 1000);
+        function myTymer(){
+            var time = new Date();
+            var date = document.getElementById("date") ;
+            date.innerHTML = time.toLocaleTimeString();
+        }
+
+    </script>
+</body>
+</html>

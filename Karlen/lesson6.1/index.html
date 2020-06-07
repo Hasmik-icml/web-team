@@ -1,0 +1,491 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+<meta type="text/html" charset="UTF-8">
+<meta name="viweport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="" />
+<link rel="shortcut icon" href="libs/img/head_icon.png" type="image/x-icon"/>
+<title>lesson</title>
+<style>
+    html, body {margin:0;
+                 padding:0;}
+
+    *{box-sizing: border-box;}
+    
+    img {width:100%;}
+
+    .container {max-width:1800px;
+                min-height:1300px;
+                display:block;
+                float:none;
+                margin:auto;
+                }
+    header {width:100%;
+             min-height:30px;
+             display:block;
+             float:left;
+             }
+   
+    
+    main {
+        width:100%;
+        height:initial;        
+        display:block;
+        float:left;
+    }
+    
+    .menu_button {display:none;}
+
+    ul {width:70%;
+        margin:0;
+        padding:0;
+        height:initial;
+        list-style:none;
+        float:left;
+        display:inline-block;
+        }
+
+    ul li {float:left;
+           display:inline;
+            margin-left:30px;
+           }
+
+    li div {
+            float:left;
+            display:inline-block;}
+
+    .top_buttons_image {width:20px;
+                        height:20px;
+                        }
+
+    .top_buttons_text {font-family:sans-serif;
+                       font-weight: bold;
+                       font-size:14px;
+                       margin-top:2px;
+                      }
+
+    .access {width:30%;
+             height:initial;
+             display:inline-block;
+             float:right;
+             padding-right:30px;
+             margin-top:2px;
+             }
+
+    .access div {display:inline-block;
+                 float:right;
+                 font-family:sans-serif;
+                 font-weight: bold;
+                 font-size:14px;
+                 margin-right:5px;
+                 }
+
+    .text_block {
+                  width:100%;
+                  height:initial;
+                  float:left;
+                  display:block;
+                  text-align:center;
+                  margin-top: 135px;
+    }
+       
+    .title {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            font-family: sans-serif;    
+            font-size:55px;
+            font-weight: bold;
+            color:#F85862;
+        }
+
+    .text_block_text {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            font-family: sans-serif;    
+            font-size:35px;
+            margin-top:20px;
+
+        }
+
+    .button_block {
+                  width:100%;
+                  height:initial;
+                  float:left;
+                  display:block;
+                  margin-top:110px;
+                }
+
+    .button_block_text {
+                        width:100%;
+                        height:initial;
+                        float:left;
+                        display:block;
+                        font-family: sans-serif;    
+                        font-weight: bold;
+                        text-align:center;
+    }
+
+    .button_block_form {
+            min-height:70px;
+            width:100%;
+            float:left;
+            display:block;
+            margin-top:10px;
+    }
+
+    form input {display:block;
+                float:none;
+                margin:auto;}
+
+    #text {
+          width:600px;
+          height:60px;
+          text-align: center;
+          font-family: sans-serif; 
+          font-size:30px;
+          border-style:none;
+          border-bottom:2px solid #CDCED0;
+        }
+
+    #button {
+             height:50px;
+             background-color:#F85862;
+             color:white;
+             text-align: center;
+             font-family: sans-serif; 
+             font-size:18px;
+             border-radius:25px;
+             margin-top:25px;
+    }
+
+     #button:active {background-color:white;}
+
+    .chatrooms_block {width:100%;
+                     height:initial;
+                     display:block;
+                     float:left;
+                     margin-top:175px;
+                    }
+
+    .chatrooms_title {width:100%;
+                      height:initial;
+                      display:block;
+                      float:left;
+                      text-align: center;
+                      font-family: sans-serif; 
+                      font-size:40px;
+    }
+
+    .miniline {width:10%;
+               height:3px;
+               display:block;
+               float:left;
+               margin:22px 45% 0;
+               background-color:#E1696E;}
+
+    .chatrooms_main {width:100%;
+                     height:initial;
+                     display:block;
+                     float:left;
+                     margin-top:30px;
+    
+    }
+
+    .item {width:25%;
+            height:initial;
+            display:inline-block;
+            float:left;
+            margin-left: 6.25%;
+                                   }    
+    
+
+
+    .item_image {width:100%;
+                  height:initial;
+                  display:block;
+                  float:left;   
+
+    }
+
+    .about {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            margin-top:5px;
+            }
+
+    .about_text {
+                 height:initial;
+                 display:inline-block;
+                 float:left;
+                 font-family: sans-serif;
+                 font-weight: bold;
+                 margin-top:3px;
+            }
+
+    
+
+    .about_form {
+                 height:initial;
+                 display:inline-block;
+                 float:right;
+                 }
+
+
+    .about_number {
+                   height:initial;
+                   display:inline-block;
+                   float:right;
+                   margin-top:3px;
+
+    }
+
+    .about_number_image  {display:inline-block;
+                       float:right;
+                       height:initial;
+                       width:15px;
+                      }
+
+    .about_number_text  {width:initial;
+                       display:inline-block;
+                       float:right;
+                       font-family: sans-serif;
+                       font-weight: bold;
+                       padding-right:15px;
+                      }
+
+    .about_form input {
+                       height:27px;
+                       display:block;
+                       float:none;
+                       margin:auto;
+                       border-radius:10px;
+                       font-family: sans-serif;
+                       color:black;
+                       font-size:18px;
+                       font-weight:bold;
+     }
+
+
+    .chatrooms_button {width:100%;
+                       height:initial;
+                       display:block;
+                       float:left;
+                       margin-top:55px;
+
+                       }
+    .chatrooms_button form {width:initial;
+                            height:initial;
+                            display:block;
+                            float:none;
+                            margin:auto;
+                            }
+     
+
+    a {text-decoration:none;
+       color:black;
+    }
+
+    a:hover {text-decoration:none;
+       color:blue;  
+    }
+    
+    a:active {text-decoration:none;
+       color:#E1696E;  
+    }
+
+    @media all and (max-width:779px){
+
+.item {width:70%;
+       display:block;
+       margin-left:15%;
+       margin-top:20px;
+               }
+
+.menu_button {width:30px;
+              height:30px;
+              margin:20px 0 0 20px;
+              height:initial;
+              display:block;
+              }
+
+ul {display:none;}
+
+.menu:hover ul {display:block;
+               float:left;
+               padding-left:20px;
+               width:100%;
+
+}
+  ul li {width:100%;
+         display:block;}
+
+li div {display:inline-block;}
+
+.access {width:100%;
+         display:block;
+         margin-top:20px;} 
+
+#text {
+          width:80%;
+          margin-left:10%;
+        }
+
+.text_block_text {  
+            font-size:25px;
+            margin-top:20px;
+
+        }
+
+        .text_block {
+                  margin-top:100px;
+    }
+
+    .button_block {
+                  margin-top:80px;
+                }
+
+
+    .chatrooms_block {
+                     margin-top:100px;
+                    }
+
+    .chatrooms_button {
+                       margin-top:25px;
+
+                       }
+
+    .about_number_text  {
+                       padding-right:3px;
+                      }
+
+    .about_form input {                       
+                       font-size:14px;
+     }
+
+     #button {
+             height:40px;
+             font-size:14px;
+    }
+    .chatrooms_title { 
+                      font-size:30px;
+    }
+
+
+}
+
+
+@media all and (max-width:1100px) and (min-width:780px){
+   .item {width:40%;
+          margin-left:6.66%;
+     }
+
+   .item:last-child{display:block;
+                    margin-left:30%;
+                    margin-top:20px;
+                 }
+
+}
+          
+
+
+
+
+
+</style>
+    </head>
+    <body>
+<div class="container">
+ <header>
+     <div class="menu">
+     <button class="menu_button">X
+     </button>
+<ul class="top_buttons">
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/trending.png" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">TRENDING</a></div>
+    </li>
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/star.png" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">MOST POPULAR</a></div>
+    </li>
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/heart.jpg" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">MOST LOVED</a></div>
+    </li>
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/gift.png" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">LATEST</a></div>
+    </li>
+</ul>
+</div>
+<div class="access">    
+    <div class="registre"><a href="">REGISTER</a></div>
+    <div class="">/</div>
+    <div class="login"><a href="">LOGIN</a></div>
+</div>
+ </header>
+ <main>
+    <div class="text_block">
+        <div class="title">Chatyard</div>
+        <div class="text_block_text">Chat with amaizng people about any <b>#topics</b></div>
+    </div>
+    <div class="button_block">
+        <div class="button_block_text">CREATE CHAT GROUP OR JOIN</div>
+            <form class="button_block_form">
+                  <input type="text" id="text" placeholder="Add a name" name="text"/>
+                  <input type="button" id="button" value="GET STARTED" name="button"/>
+            </form>
+    </div>
+    <div class="chatrooms_block">
+        <div class="chatrooms_title"><b>Featured</b> Chatrooms</div>
+        <div class="miniline"></div>
+        <div class="chatrooms_main">
+            <div class="item">
+                <div class="item_image"><img src="libs/img/music.jpg" alt="image"/>
+                    <div class="about">
+                        <div class="about_text"># Music</div>
+                        <form class="about_form"><input type="button" value="Join" name="button"/></form>
+                        <div class="about_number">
+                            <div class="about_number_text">27.234</div>
+                            <div class="about_number_image"><img src="libs/img/about_number_image.png" alt="image" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_image"><img src="libs/img/sport.jpg" alt="image"/>
+                    <div class="about">
+                        <div class="about_text"># Sports</div>
+                        <form class="about_form"><input type="button" value="Join" name="button"/></form>
+                        <div class="about_number">
+                            <div class="about_number_text">27.234</div>
+                            <div class="about_number_image"><img src="libs/img/about_number_image.png" alt="image" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_image"><img src="libs/img/electronics.jpg" alt="image"/>
+                    <div class="about">
+                        <div class="about_text"># Electronics</div>
+                        <form class="about_form"><input type="button" value="Join" name="button"/></form>
+                        <div class="about_number">
+                            <div class="about_number_text">27.234</div>
+                            <div class="about_number_image"><img src="libs/img/about_number_image.png" alt="image" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatrooms_button">
+        <form><input type="button" id="button" value="VIEW ALL CHATROOMS" name="button"/></form>
+        </div>
+    </div>
+ </main>
+</div>
+    </body>
+</html>
