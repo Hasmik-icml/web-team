@@ -1,0 +1,215 @@
+/* Major styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+/* Container styles */
+.container {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 100%;
+  min-height: 800px;
+  max-width: 1600px;
+}
+/* Main styles */
+.main {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.main .main-block {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding-top: 100px;
+}
+@media all and (max-width: 768px) {
+  .main .main-block {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+.main .main-block .main-block-img {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 420px;
+}
+@media all and (max-width: 900px) {
+  .main .main-block .main-block-img {
+    width: 90%;
+  }
+}
+@media all and (max-width: 768px) {
+  .main .main-block .main-block-img {
+    width: 70%;
+  }
+}
+.main .main-block .main-block-sign {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 80%;
+}
+.main .main-block .main-block-sign div[class*="sign-"] {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.main .main-block .main-block-sign .sign-title {
+  font-size: 62px;
+  font-weight: bolder;
+}
+@media all and (max-width: 570px) {
+  .main .main-block .main-block-sign .sign-title {
+    font-size: 55px;
+  }
+}
+.main .main-block .main-block-sign .sign-text {
+  margin-top: 30px;
+}
+.main .main-block .main-block-sign .sign-text .text-row {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid #ababab;
+  margin-top: 30px;
+}
+.main .main-block .main-block-sign .sign-text .text-row div[class*="row-"] {
+  display: inline-block;
+  float: left;
+}
+.main .main-block .main-block-sign .sign-text .text-row .row-img-one {
+  width: 20px;
+  margin-top: 10px;
+}
+.main .main-block .main-block-sign .sign-text .text-row .row-button {
+  width: calc(100% - 47px);
+  -moz-width: calc(100% - 47px);
+  -webkit-width: calc(100% - 47px);
+}
+.main .main-block .main-block-sign .sign-text .text-row .row-button input {
+  width: 95%;
+  display: block;
+  float: none;
+  margin: auto;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+}
+.main .main-block .main-block-sign .sign-text .text-row .row-img-two {
+  width: 27px;
+  margin-top: 5px;
+}
+.main .main-block .main-block-sign .sign-rem {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.main .main-block .main-block-sign .sign-log {
+  margin-top: 30px;
+}
+.main .main-block .main-block-sign .sign-log input {
+  font-size: 20px;
+  color: white;
+  background-color: #6dabe4;
+  padding: 25px 53px;
+  border-radius: 5px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block .main-block-sign .sign-log input {
+    padding: 18px 35px;
+  }
+}
+@media all and (max-width: 450px) {
+  .main .main-block .main-block-sign .sign-log input {
+    padding: 15px 30px;
+  }
+}
+/* Article styles */
+.article {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+@media all and (max-width: 570px) {
+  .article {
+    margin-top: 0;
+  }
+}
+.article .article-block {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+@media all and (max-width: 570px) {
+  .article .article-block {
+    width: 100%;
+  }
+}
+.article .article-block .article-text {
+  display: inline-block;
+  float: left;
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+@media all and (max-width: 650px) {
+  .article .article-block .article-text {
+    font-size: 20px;
+  }
+}
+.article .article-block ul {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+.article .article-block ul li {
+  display: inline-block;
+  float: left;
+  width: 42px;
+  margin-left: 10px;
+}
+@media all and (max-width: 650px) {
+  .article .article-block ul li {
+    width: 35px;
+  }
+}
+@media all and (max-width: 450px) {
+  .article .article-block ul li {
+    width: 30px;
+  }
+}
+.article .article-block ul li img {
+  border-radius: 5px;
+}
+.article .article-block:first-child .article-text {
+  width: 100%;
+  text-align: center;
+}
+@media all and (max-width: 570px) {
+  .article .article-block:first-child .article-text {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+.article .article-block:nth-child(2) {
+  padding-left: 5%;
+}
+@media all and (max-width: 570px) {
+  .article .article-block:nth-child(2) {
+    padding-left: 10%;
+    margin-top: 15px;
+  }
+}

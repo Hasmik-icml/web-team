@@ -1,0 +1,23 @@
+<div class="fruits">
+        <select id="select">
+            <option value="Xndzor">Xndzor</option>
+            <option value="Tandz">Tandz</option>
+            <option value="Mandarin">Mandarin</option>
+            <option value="Apelsin">Apelsin</option>
+            <option value="Banan">Banan</option>
+            <option value="Xaxox">Xaxox</option>
+        </select>
+</div>
+
+<div id="result">
+</div>
+
+
+<script>
+        var select = document.getElementById("select");
+        var result = document.getElementById("result");
+          
+        select.onclick = function(){
+             result.innerHTML = select.value;
+          }
+</script>

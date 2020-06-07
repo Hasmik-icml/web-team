@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="libs/img/head_icon.png" type="image/x-icon"/>
+    <title>Lesson</title>
+    <style>
+
+body{
+    margin:0;
+    padding:0;
+}
+
+*{box-sizing: border-box;}
+
+img{width:100%;}
+
+.container{
+    width:100%;
+    min-height:900px;
+    display:block;
+    float:none;
+    margin:auto;
+    background-color:#412A58;
+}
+
+.container_block {
+    width:85%;
+    min-height:900px;
+    display:block;
+    float:none;
+    margin:auto;
+}
+
+header {
+    width:100%;
+    display:inline-block;
+    float:left;
+    min-height:55px;
+
+}
+
+nav {
+    width:80%;
+    min-height:55px;
+    display:inline-block;
+    float:left;
+    background-color:#4B3065;
+
+}
+
+
+nav ul {
+    margin: 0;
+    list-style:none;
+    padding:0;
+    width:100%;
+    font-family: sans-serif;
+    color:white;
+}
+
+nav ul li {
+    width:20%;
+    border-left:1px solid #472C61;
+    display:inline;
+    float:left;
+    text-align: center;
+    line-height: 55px;
+
+
+}
+
+nav ul li:first-child {
+    background-color:#E36481;
+    min-height:55px;
+}
+
+.contact {
+    width:20%;
+    display:inline-block;
+    float:left;
+    min-height:55px;
+    background-color:#E36481;
+
+    }
+
+    .contact ul {
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+
+    .contact ul li {
+        display:inline;
+        float:left;
+        width:22px;
+        margin:15px 0 0 15px;
+    }
+
+article {
+    width:100%;
+    display:inline-block;
+    float:left;
+    text-align: center;
+    color:white;
+    font-family: sans-serif;
+}
+
+article div {width:100%;
+    display:block;
+    float:left;
+    margin-top:20px;
+
+}
+
+article div:first-child {
+    font-size:90px;
+}
+
+article div:nth-child(2) {
+    font-size:18px;
+}
+
+#text {width:300px;
+min-height:40px;
+border-radius:20px 0 0 20px;
+background-color:#412A58;
+color:white;
+text-align: center;
+
+}
+
+#button {
+    width:100px;
+min-height:40px;
+border-radius:0 20px 20px 0;
+margin-left:0;
+color:white;
+background-color:#E36481;
+}
+
+.article_date {
+    color:#E36481;
+}
+
+main {
+    width:100%;
+    min-height:400px;
+    display:inline-block;
+    float:left;
+    color:white;
+    margin-top:20px;
+}
+
+main section {
+    width:25%;
+    min-height:400px;
+    display:inline-block;
+    float:left;
+
+}
+
+section .block {
+    width:100%;
+    min-height:250px;
+    display:block;
+    float:left;
+    text-align: center;
+    position: relative;
+}
+
+
+section:first-child .block:first-child{
+    background-color: #4b3065;
+}
+
+
+section:first-child .block:first-child div{
+    width:100%;
+    display:block;
+    float:left;
+}
+
+section:first-child .block:first-child div:first-child {
+    padding:15px 5px 0;
+    font-family: sans-serif;
+    font-size:15px;
+}
+
+section:first-child .block:first-child div:nth-child(2) {
+    display:block;
+    float:left;
+    margin:10px 45% 0;
+    width:10%;
+    height:1px ;
+    background-color:white;
+}
+
+section:first-child .block:first-child div:last-child {
+  margin-top:10px;
+  font-family: sans-serif;
+  font-size:18px;
+
+}
+
+section:nth-child(n+2){
+    font-family: sans-serif;
+  font-size:18px;
+
+}
+
+.polygon {
+    width:100%;
+    min-height:250px;
+}
+
+.block .block_image {
+    width:100px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left:calc((100% - 100px) / 2);
+    -moz-margin-left:calc((100% - 100px) / 2);
+    -webkit-margin-left:calc((100% - 100px) / 2);
+}
+
+.block .block_title {
+    position:absolute;
+    margin-top: -40px;
+    margin-left:25%;
+    width:50%;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="container_block">
+        <header>
+            <nav>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>articles</li>
+                    <li>books</li>
+                    <li>contacts</li>
+                </ul>
+            </nav>
+            <div class="contact">
+                    <ul>
+                            <li>
+                                <img src="libs/img/fb.png" alt="image"/>
+                            </li>
+                            <li>
+                                    <img src="libs/img/google.png" alt="image"/>
+
+                            </li>
+                            <li>
+                                    <img src="libs/img/twitter.png" alt="image"/>
+
+                            </li>
+                    </ul>
+
+            </div>
+        </header>
+        <article>
+            <div class="article_title">
+                Horoscope
+            </div>
+            <div class="article_text">
+                HOROSCOPES & ASTROLOGY REPORTS ONLINE
+            </div>
+            <div class="article_form">
+               <form>
+                   <input type="text" id="text" name="text" />
+                   <input type="button" id="button" name="button" value="search"/>
+               </form>
+            </div>
+            <div class="article_date"> Nov. 22. 2014</div>
+        </article>
+        <main>
+            <section>
+                <div class="block">
+                         <div class="block_text">
+                    The Magician holds out his hands. 
+                    In his possession he occupies all the suits of the Minor Arcana: 
+                    Cups, Swords, Pentacles, and Wands. His white cloak symbolizes his purity of character; 
+                    his shirt beneath has a Mercury glyph to represent the communicative planet he rules by. 
+                        </div>
+                        <div></div>
+                        <div>read more</div>
+                </div>
+                    <div class="block">
+                         <div class=polygon style="background-color:#864683;
+                         clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                         <div class=polygon style="background-color:#8A4A86;
+                         clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                            <div class="block_image">
+                                <img src="libs/img/leo_img.jpg" alt="image">
+                            </div>
+                            <div class="block_title">
+                                LEO
+                            </div>
+
+                    </div>
+            </section>
+            <section>
+                    <div class="block">
+                            <div class=polygon style="background-color:#523a6c;
+                            clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                            <div class=polygon style="background-color:#5c3d76;
+                            clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                            <div class="block_image">
+                                    <img src="libs/img/taurus_img.jpg" alt="image">
+                                </div>
+                                <div class="block_title">
+                                    TAURUS
+                                </div>
+                    </div>
+                    <div class="block">
+                            <div class=polygon style="background-color:#923971;
+                            clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                            <div class=polygon style="background-color:#973c75;
+                            clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                             <div class="block_image">
+                                    <img src="libs/img/virgo_img.jpg" alt="image">
+                                </div>
+                                <div class="block_title">
+                                      VIRGO
+                                </div>
+                    </div>
+            </section>
+            <section>
+                    <div class="block">
+                            <div class=polygon style="background-color:#6e4587;
+                            clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                            <div class=polygon style="background-color:#5c3d76;
+                            clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                            <div class="block_image">
+                                    <img src="libs/img/gemini_img.jpg" alt="image">
+                                </div>
+                                <div class="block_title">
+                                      GEMINI
+                                </div>
+                    </div>
+                    <div class="block">
+                            <div class=polygon style="background-color:#9b3e77;
+                            clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                            <div class=polygon style="background-color:#a64481;
+                            clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                            <div class="block_image">
+                                    <img src="libs/img/libra_img.jpg" alt="image">
+                                </div>
+                                <div class="block_title">
+                                      LIBRA
+                                </div>
+                    </div>
+            </section>
+            <section>
+                    <div class="block">
+                            <div class=polygon style="background-color:#78498D;
+                            clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                            <div class=polygon style="background-color:#7b4d8e;
+                            clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                            <div class="block_image">
+                                    <img src="libs/img/cancer_img.jpg" alt="image">
+                                </div>
+                                <div class="block_title">
+                                      CANCER
+                                </div>
+                    </div>
+                    <div class="block">
+                            <div class=polygon style="background-color:#af4988;
+                            clip-path: polygon(0 0,100% 100%, 0 100%);position:absolute;"></div>
+                            <div class=polygon style="background-color:#bb5193;
+                            clip-path: polygon(0 0,100% 0, 100% 100%);"></div>
+                            <div class="block_image">
+                                    <img src="libs/img/scorpio_img.jpg" alt="image">
+                                </div>
+                                <div class="block_title">
+                                      SCORPIO
+                                </div>
+                    </div>
+            </section>
+        </main>
+        </div>
+    </div>
+</body>
+</html>

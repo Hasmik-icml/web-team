@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: rgb(179,220,237);/* Old Browsers */
+    background: -moz-linear-gradient(left, rgb(179,220,237) 0%, rgb(41,184,229) 50%, rgb(188,224,238) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(left, rgb(179,220,237) 0%, rgb(41,184,229) 50%, rgb(188,224,238) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgb(179,220,237) 0%, rgb(41,184,229) 50%, rgb(188,224,238) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgb(179,220,237) 0%, rgb(41,184,229) 50%, rgb(188,224,238) 100%); /* IE 10+ */
+    background: linear-gradient(to right, rgb(179,220,237) 0%, rgb(41,184,229) 50%, rgb(188,224,238) 100%);/* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );/* IE6-9 */
+}
+#clock{
+    width: 400px;
+    height: 400px;
+    display: flex;
+     background: url("../images/clock.png");
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    position: relative;
+}
+#clock:before{
+   content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    z-index: 1000;
+}
+#clock .hour,
+#clock .minute,
+#clock .second{
+    position: absolute;
+}
+#clock .hour, .hr{
+    height: 180px;
+}
+#clock .min, .mn{
+    height: 220px;
+}
+#clock .sec, .sc{
+    height: 250px;
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background-color: #ffc600;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.mn:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background-color: #12121d;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sc:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 170px;
+    background-color: #12121d;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
