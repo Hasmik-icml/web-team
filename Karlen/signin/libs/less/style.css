@@ -1,0 +1,235 @@
+/* Major styles*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+/* Container styles */
+.container {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  background-color: #eaeeef;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media all and (max-width: 650px) {
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/* Container-box styles */
+.container-box {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 63%;
+  max-width: 840px;
+  min-height: 650px;
+}
+@media all and (max-width: 1000px) {
+  .container-box {
+    width: 630px;
+  }
+}
+@media all and (max-width: 650px) {
+  .container-box {
+    width: 95%;
+    min-height: 600px;
+  }
+}
+/* Header styles */
+.header {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 225px;
+  border-radius: 13px 13px 0 0;
+  background: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media all and (max-width: 500px) {
+  .header {
+    background: #1e1e1e;
+  }
+}
+.header .header-title {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 225px;
+}
+@media all and (max-width: 650px) {
+  .header .header-title {
+    font-size: 35px;
+  }
+}
+/* Main styles */
+.main {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 0 0 13px 13px;
+}
+.main .main-block {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 75%;
+  margin-top: 30px;
+  min-height: 400px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block {
+    min-height: 350px;
+  }
+}
+@media all and (max-width: 550px) {
+  .main .main-block {
+    width: 90%;
+  }
+}
+.main .main-block div[class*="main-block-"] {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.main .main-block .main-block-name form,
+.main .main-block .main-block-pass form {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.main .main-block .main-block-name form label,
+.main .main-block .main-block-pass form label {
+  font-size: 23px;
+  display: inline-block;
+  float: left;
+  width: 130px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block .main-block-name form label,
+  .main .main-block .main-block-pass form label {
+    font-size: 19px;
+    width: 110px;
+  }
+}
+.main .main-block .main-block-name form input,
+.main .main-block .main-block-pass form input {
+  font-size: 20px;
+  display: inline-block;
+  float: left;
+  width: calc(100% - 130px);
+  -moz-width: calc(100% - 130px);
+  -webkit-width: calc(100% - 130px);
+  border: none;
+  border-bottom: 2px solid #d5d5d5;
+  padding-left: 5px;
+  padding-bottom: 15px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block .main-block-name form input,
+  .main .main-block .main-block-pass form input {
+    width: calc(100% - 110px);
+    -moz-width: calc(100% - 110px);
+    -webkit-width: calc(100% - 110px);
+    font-size: 17px;
+    padding-left:10px;
+  }
+}
+.main .main-block .main-block-rem {
+  font-size: 20px;
+  margin-top: 10px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block .main-block-rem {
+    font-size: 18px;
+  }
+}
+.main .main-block .main-block-rem form {
+  display: inline-block;
+  float: left;
+  padding-left: 130px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block .main-block-rem form {
+    padding-left: 100px;
+  }
+}
+@media all and (max-width: 500px) {
+  .main .main-block .main-block-rem form {
+    padding-left: 5%;
+  }
+}
+@media all and (max-width: 370px) {
+  .main .main-block .main-block-rem form {
+    padding-left: 1%;
+    font-size: 17px;
+  }
+}
+.main .main-block .main-block-rem form input {
+  display: inline-block;
+  float: left;
+  width: 30px;
+}
+.main .main-block .main-block-rem form label {
+  display: inline-block;
+  float: left;
+}
+.main .main-block .main-block-rem .forgot {
+  display: inline-block;
+  float: right;
+}
+@media all and (max-width: 370px) {
+  .main .main-block .main-block-rem .forgot {
+    padding-left: 1%;
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 318px) {
+  .main .main-block .main-block-rem .forgot {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    margin: 10px 0 0 1%;
+  }
+}
+.main .main-block .main-block-log input {
+  margin-left: 130px;
+  padding: 19px 70px;
+  color: white;
+  background-color: #57b845;
+  font-size: 22px;
+  border-radius: 40px;
+}
+@media all and (max-width: 650px) {
+  .main .main-block .main-block-log input {
+    font-size: 20px;
+    margin-left: 100px;
+    padding: 10px 50px ;
+  }
+}
+@media all and (max-width: 500px) {
+  .main .main-block .main-block-log input {
+    margin-left: 5%;
+  }
+}
+@media all and (max-width: 370px) {
+  .main .main-block .main-block-log input {
+    margin-left: 1%;
+    font-size: 18px;
+  }
+}

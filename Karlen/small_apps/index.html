@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="libs/img/head_icon.png" type="image/x-icon"/>
+    <title>Lesson</title>
+</head>
+<style>
+
+body {margin:0;
+      padding:0;
+      }
+
+img {
+    width:100%;
+}
+
+
+.container {
+            width:100%;
+            max-width:2200px;
+            min-height:1100px;
+            display:block;
+            float:none;
+            margin:auto;
+
+}
+
+header{width:100%;
+       min-height:55px;
+       display:inline-block;
+       float:left;
+}
+
+main{
+    width:100%;
+    display: inline-block;
+    float:left;
+    min-height:720px;
+    background-color:#012060;
+    clip-path: polygon(100% 0, 100% 95%, 90% 100%, 10% 100%, 0 95%, 0 0);
+    -moz-clip-path: polygon(100% 0, 100% 95%, 90% 100%, 10% 100%, 0 95%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 95%, 90% 100%, 10% 100%, 0 95%, 0 0);
+}
+
+.logo {
+    height:initial;
+    margin-left:10%;
+    display:inline-block;
+    float:left;
+    font-family: sans-serif;
+    font-size:25px;
+    font-weight: bold;
+    color:#012060;
+    margin-top:5px;
+}
+
+.logo div {display:inline-block;
+           float:left;
+           }
+
+.logo div:first-child {width:34px;
+                       }
+
+.logo div:last-child{
+    line-height:40px;
+}
+
+nav {
+    display:inline-block;
+    float:right;
+    margin-right:10%;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+nav ul {list-style:none;
+        padding-left:0;
+        }
+
+nav ul li {
+    display:inline;
+    float:right;
+    margin-right:20px;
+} 
+
+main .main_text, .main_img {
+    display:inline-block;
+    float:left;
+    color:white;
+}
+
+.main_text{
+    width:36%;
+    margin:130px 0 0 10%;
+}
+
+main .main_text div {
+    font-family:sans-serif;
+    font-size: 15px;
+    margin-top:30px;
+}
+
+main .main_text div:first-child {
+    font-size:45px;
+}
+
+.main_text .button input {
+                          padding:25px;
+                          background-color:#267BEF;
+}
+
+.main_img {width:330px;
+           float:right;
+           margin-top:80px;
+           margin-right:calc((54% - 330px) / 2);
+           -moz-margin-right:calc((54% - 330px) / 2);
+           -webkit-margin-right:calc((54% - 330px) / 2);
+
+           }
+
+article {
+    width:80%;
+    display: inline-block;
+    float: left;
+    min-height:200px;
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    -moz-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    margin-left:10%;
+    margin-top:-80px;
+}
+
+article .block {
+    width:calc(100% / 3);
+    -moz-width:calc(100% / 3);
+    -webkit-width:calc(100% / 3);
+    display:inline-block;
+    float:left;
+    min-height:250px;
+
+
+}
+
+.block .item {
+    width:90%;
+    min-height:250px;
+    display:block;
+    float:none;
+    margin:auto;
+    box-shadow: 2px 2px 2px silver;
+}
+
+.item .block_img {
+    display:block;
+    float:none;
+    margin: auto;
+    width:45px;
+    margin-top:30px;
+
+}
+
+.block_text {
+    width:100%;
+    display:block;
+    float:left;
+}
+
+.block_text div {
+    width:100%;
+    display:block;
+    float:left;
+    text-align:center;
+    font-family: sans-serif;
+    margin-top:20px;
+}
+
+.block_text div:first-child{
+    font-size:20px;
+    font-weight:bold;
+    margin-top:30px;
+}
+
+.menu {
+    display:none;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+a:hover {
+    color:blue;
+}
+
+@media all and (max-width: 1000px) and (min-width: 768px){
+
+    article .block {
+    width:50%;
+    display:inline-block;
+    float:left;
+    min-height:250px;
+}
+
+article .block:last-child {
+    margin-left:25%;
+}
+
+}
+
+@media all and (max-width:767px){
+
+nav {
+    width:70px;
+    display:inline-block;
+    float:right;
+    margin:10px 20px 0 0;
+
+}
+
+nav ul {
+    display:none;
+}
+
+.menu {display:block;
+       position: absolute;
+       margin:10px 70px 0 0;
+      }
+
+ul li {
+    margin-top: 10px;
+    float:left;
+    display:block;
+}  
+
+nav:hover ul {display:block;
+    background-color: cadetblue;
+    margin:10px 20px 0 0;
+position:absolute;
+z-index: 10000000001;
+}
+
+main .main_text{
+    width:70%;
+    margin-left:15%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main_img {width:40%;
+           float:left;
+           margin-top:30px;
+           margin-left:30%;
+
+           }
+
+article {
+    margin-top:0;
+}
+
+article .block {
+    width:100%;
+}
+
+.main_text .button input {
+                          padding:15px;
+}
+
+}
+
+@media all and (max-width:450px){
+    main .main_text div:first-child {
+    font-size:30px;
+}
+
+article {
+    width:90%;
+    margin-left:5%;
+    margin-top:-80px;
+}
+
+.main_img {width:50%;
+           margin-left:25%;
+
+           }
+
+.logo {
+    margin-left:10px;
+}
+
+}
+
+@media all and (min-width:1500px){
+    
+    .logo {
+    margin-left:15%;
+    font-size:35px;
+}
+
+.logo div:first-child {width:40px;
+                       }
+
+nav {
+    margin-right:20%;
+    font-size: 20px;
+
+}
+
+nav ul li {
+    margin-right:40px;
+} 
+
+main .main_text, .main_img {
+    display:inline-block;
+    float:left;
+    color:white;
+}
+
+.main_text{
+    width:40%;
+    margin:130px 0 0 10%;
+}
+
+main .main_text div {
+    font-family:sans-serif;
+    font-size: 30px;
+    margin-top:30px;
+}
+
+main .main_text div:first-child {
+    font-size:65px;
+}
+
+.main_text .button input {
+                          padding:25px;
+                          background-color:#267BEF;
+                          font-size:25px;
+}
+
+.main_img {width:400px;
+           float:right;
+           margin-top:80px;
+           margin-right:calc((50% - 400px) / 2);
+           -moz-margin-right:calc((50% - 400px) / 2);
+           -webkit-margin-right:calc((50% - 400px) / 2);
+
+           }
+
+article {
+    width:80%;
+    display: inline-block;
+    float: left;
+    min-height:200px;
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    -moz-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    margin-left:10%;
+    margin-top:-80px;
+}
+
+article .block {
+    width:calc(100% / 3);
+    -moz-width:calc(100% / 3);
+    -webkit-width:calc(100% / 3);
+    display:inline-block;
+    float:left;
+    min-height:250px;
+
+
+}
+
+.block .item {
+    width:95%;
+    min-height:250px;
+    display:block;
+    float:none;
+    margin:auto;
+    box-shadow: 2px 2px 2px silver;
+}
+
+.item .block_img {
+    width:60px;
+    margin-top:40px;
+
+}
+
+.block_text {
+    width:100%;
+    display:block;
+    float:left;
+}
+
+.block_text div {
+    font-size:20px;
+    margin-top:20px;
+}
+
+.block_text div:first-child{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:30px;
+}
+
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo_image"> 
+                    <img src="libs/img/logo_image.jpg" alt="image"/>
+                </div>
+                <div class="logo_text">small apps</div>
+            </div>
+            <nav>
+                <div class="menu">
+                    MENU
+                </div>
+                <ul>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ABOUT</a</li>
+                    <li> <a href="">PAGES</a</li>
+                    <li><a href="">HOME</a</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main_text">
+                <div class="title">Showcase your app with Small Apps</div>
+                <div class="text">Besides its beautiful design. Laapp is an incredibly rich core framework 
+                    for you to showcase your App.
+                </div>
+                <div class="button"><input type="button" value="DOWNLOAD NOW" id="button" name="button"></div>
+            </div>
+            <div class="main_img">
+                <img src="libs/img/main_img.jpg" alt="image"/>
+            </div>
+        </main>
+        <article>
+            <div class="block">
+              <div class="item">
+                <div class="block_img">
+                    <img src="libs/img/block1_img.jpg" alt="image" />
+                </div>
+                 <div class="block_text">
+                    <div>
+                        Themes Made Easy
+                    </div>
+                    <div>
+                        Loreem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae tempore
+                         ipsam dignissimos molestias.
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="block">
+                    <div class="item">
+                            <div class="block_img">
+                                <img src="libs/img/block2_img.jpg" alt="image" />
+                            </div>
+                             <div class="block_text">
+                                <div>
+                                    Themes Made Easy
+                                </div>
+                                <div>
+                                    Loreem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae tempore
+                                     ipsam dignissimos molestias.
+                                </div>
+                             </div>
+                          </div>
+            </div>
+            <div class="block">
+                    <div class="item">
+                            <div class="block_img">
+                                <img src="libs/img/block3_img.jpg" alt="image" />
+                            </div>
+                             <div class="block_text">
+                                <div>
+                                    Themes Made Easy
+                                </div>
+                                <div>
+                                    Loreem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae tempore
+                                     ipsam dignissimos molestias.
+                                </div>
+                             </div>
+                          </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

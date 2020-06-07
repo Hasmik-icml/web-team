@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chatyard</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="libs/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="menu">
+            <nav >
+                <ul class="main-menu">
+                    <li><a href="#"><i class='fas fa-fire-alt' style="color: #9f6b3b"></i>TRENDING</a></li>
+                    <li><a href="#"><i class='fas fa-star' style="color: yellow"></i>MOST POPULAR</a></li>
+                    <li><a href="#"><i class='fas fa-heart' style="color: red"></i>MOST LOVED</a></li>
+                    <li><a href="#"><i class="fa fa-gift" style="color: #ffb935"></i>LATEST</a></li>
+                </ul>
+                <ul class="log">
+                    <li><a href="">LOGIN / </a></li>
+                    <li><a href="">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-container">
+            <h1 style="color:#f85e5e">Chatyard</h1>
+            <h2>Chat with aamzing people about any <b>#topics</b></h2>
+            <h5 style="text-transform: uppercase">create a chat group or join</h5>
+            <form action="#">
+                <input type="text" placeholder="Add a name" class="add">
+                <button>get started</button>
+            </form>
+        </div>
+    </header>
+    <div class="container" >
+        <h2><b>Featured </b>Chatrooms</h2>
+        <div class="bordered"></div>
+        <div class="content"id="content">
+            <div class="item">
+                <img src="libs/images/music.png" alt="">
+                <span class="description"><b>#Music</b></span>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/sport.png" alt="">
+                <span><b>#Sports</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/electronics.png" alt="">
+                <span><b>#Electronics</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item"><img src="libs/images/music.png" alt="">
+                <span><b>#Music</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/sport.png" alt="">
+                <span><b>#Sports</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/electronics.png" alt="">
+                <span><b>#Electronics</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/music.png" alt="">
+                <span><b>#Music</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/sport.png" alt="">
+                <span><b>#Sports</b></span>
+                <i class="green"></i>27,234
+                <button class="inherit">Join</button>
+            </div>
+            <div class="item">
+                <img src="libs/images/electronics.png" alt="">
+                <span><b>#Electronics</b></span>
+                <div class="green"></div>27,234
+                <button class="inherit">Join</button>
+            </div>
+
+        </div>
+        <button onclick="myFunction()">view all chatrooms</button>
+    </div>
+</div>
+<script>
+    function myFunction() {
+        document.getElementById("content").style.overflow = "initial";
+    }
+</script>
+</body>
+</html>

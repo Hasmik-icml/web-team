@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+
+select {
+    width: 15%;
+    background-color: darkcyan;
+    color: white;
+    height: 25px;
+}
+option{
+    padding: 5px 0;
+}
+#fruitsValue{
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+    width: 20%;
+    margin: 100px auto;
+}

@@ -1,0 +1,942 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+<meta type="text/html" charset="UTF-8">
+<meta name="viweport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="" />
+<link rel="shortcut icon" href="libs/img/head_icon.png" type="image/x-icon"/>
+<title>lesson</title>
+<style>
+    html, body {margin:0;
+                 padding:0;}
+
+    *{box-sizing: border-box;}
+    
+    img {width:100%;}
+
+    .container {width:100%;
+                min-height:1300px;
+                display:block;
+                float:none;
+                margin:auto;
+                }
+    header {width:100%;
+             min-height:30px;
+             display:block;
+             float:left;
+             }
+    
+    main {
+        width:100%;
+        height:initial;        
+        display:block;
+        float:left;
+    }
+
+    ul {width:70%;
+        margin:0;
+        padding:0;
+        height:initial;
+        list-style:none;
+        float:left;
+        display:inline-block;
+        }
+
+    ul li {float:left;
+           display:inline;
+            margin-left:30px;
+           }
+
+    li div {
+            float:left;
+            display:inline-block;}
+
+    .top_buttons_image {width:20px;
+                        height:20px;
+                        }
+
+    .top_buttons_text {font-family:sans-serif;
+                       font-weight: bold;
+                       font-size:14px;
+                       margin-top:2px;
+                      }
+
+    .access {width:30%;
+             height:initial;
+             display:inline-block;
+             float:right;
+             padding-right:30px;
+             margin-top:2px;
+             }
+
+    .access div {display:inline-block;
+                 float:right;
+                 font-family:sans-serif;
+                 font-weight: bold;
+                 font-size:14px;
+                 margin-right:5px;
+                 }
+
+    .text_block {
+                  width:100%;
+                  height:initial;
+                  float:left;
+                  display:block;
+                  text-align:center;
+                  margin-top: 135px;
+    }
+       
+    .title {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            font-family: sans-serif;    
+            font-size:55px;
+            font-weight: bold;
+            color:#F85862;
+        }
+
+    .text_block_text {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            font-family: sans-serif;    
+            font-size:35px;
+            margin-top:20px;
+
+        }
+
+    .button_block {
+                  width:100%;
+                  height:initial;
+                  float:left;
+                  display:block;
+                }
+
+    .button_block_text {
+                        width:100%;
+                        height:initial;
+                        float:left;
+                        display:block;
+                        font-family: sans-serif;    
+                        font-weight: bold;
+                        margin-top:110px;
+                        text-align:center;
+
+
+    }
+
+    .button_block_form {
+            min-height:70px;
+            width:100%;
+            float:left;
+            display:block;
+            margin-top:10px;
+    }
+
+    form input {display:block;
+                float:none;
+                margin:auto;}
+
+    #text {
+          width:600px;
+          height:60px;
+          text-align: center;
+          font-family: sans-serif; 
+          font-size:30px;
+          border-style:none;
+          border-bottom:2px solid #CDCED0;
+        }
+
+    #button {
+             width:200px;
+             height:50px;
+             background-color:#F85862;
+             color:white;
+             text-align: center;
+             font-family: sans-serif; 
+             font-size:18px;
+             border-radius:25px;
+             margin-top:25px;
+    }
+
+    .chatrooms_block {width:100%;
+                     height:initial;
+                     display:block;
+                     float:left;
+                     margin-top:175px;
+                    }
+
+    .chatrooms_title {width:100%;
+                      height:initial;
+                      display:block;
+                      float:left;
+                      text-align: center;
+                      font-family: sans-serif; 
+                      font-size:40px;
+    }
+
+    .miniline {width:10%;
+               height:3px;
+               display:block;
+               float:left;
+               margin:22px 45% 0;
+               background-color:#E1696E;}
+
+    .chatrooms_main {width:100%;
+                     height:initial;
+                     display:block;
+                     float:left;
+                     margin-top:30px;
+    
+    }
+
+    .music {width:24.81203%;
+            height:initial;
+            display:inline-block;
+            float:left;
+            margin-left:8.781955%;
+                                   }    
+    
+
+
+    .sports {width:24.81203%;
+                  height:initial;
+                  display:inline-block;
+                  float:left;
+                  margin-left:4%;
+                                   }   
+
+
+    .electronics {width:24.81203%;
+                  height:initial;
+                  display:inline-block;
+                  float:left;
+                  margin-left:4%;
+
+                                   }   
+
+    .music_image, .sports_image, .electronics_image {width:100%;
+                  height:initial;
+                  display:block;
+                  float:left;   
+
+    }
+
+    .about {width:100%;
+            height:initial;
+            display:block;
+            float:left;
+            margin-top:5px;
+            }
+
+    .about_text {width:39%;
+                 height:initial;
+                 display:inline-block;
+                 float:left;
+                 font-family: sans-serif;
+                 font-weight: bold;
+                 margin-top:3px;
+            }
+
+    
+
+    .about_form {width:75px;
+                 height:initial;
+                 display:inline-block;
+                 float:right;
+                 }
+
+
+    .about_number {width:calc(61% - 75px);
+                   width:-moz-calc(61% - 75px);
+                   width:-webkit-calc(61% - 75px);
+                   height:initial;
+                   display:inline-block;
+                   float:right;
+                   margin-top:3px;
+
+    }
+
+    .about_number_image  {display:inline-block;
+                       float:right;
+                       height:initial;
+                       width:15px;
+                      }
+
+    .about_number_text  {width:initial;
+                       display:inline-block;
+                       float:right;
+                       font-family: sans-serif;
+                       font-weight: bold;
+                       padding-right:15px;
+                      }
+
+    .about_form input {width:100%;
+                       height:27px;
+                       display:block;
+                       float:none;
+                       margin:auto;
+                       border-radius:10px;
+                       font-family: sans-serif;
+                       color:black;
+                       font-size:15px;
+                       font-weight: bold;
+
+     }
+
+
+    .chatrooms_button {width:100%;
+                       height:initial;
+                       display:block;
+                       float:left;
+                       }
+    .chatrooms_button form {width:initial;
+                            height:initial;
+                            display:block;
+                            float:none;
+                            margin:auto;
+                            margin-top:55px;
+                            }
+     
+    .chatrooms_button input {width:300px;
+                             height:50px;
+                             border-radius:25px;
+                             background-color:#F85862;
+                             color:white;                         
+                                 }
+
+    a {text-decoration:none;
+       color:black;
+    }
+
+    a:hover {text-decoration:none;
+       color:blue;  
+    }
+    
+    a:active {text-decoration:none;
+       color:#E1696E;  
+    }
+          
+
+
+           @media all and (max-width: 249px){
+              
+               
+
+           }
+
+
+
+           @media all and (max-width: 319px) and (min-width:250px){
+              
+
+            .music {width:90%;
+                display:block;
+            margin-left:5%;
+            margin-top:20px;
+                                }
+
+            .sports {width:90%;
+                display:block;
+                  margin-left:5%;
+                  margin-top:20px ;
+
+                                   }   
+
+
+            .electronics {width:90%;
+                  display:block;
+                  margin-left:5%;
+                  margin-top:20px ;
+
+                                   }  
+
+     ul {width:100%;
+        display:block;
+        float:left;
+
+        }
+
+    ul li {display:block;
+           float:left;
+           width:100%;
+           margin-left:10px;
+           }
+
+    .top_buttons_image {width:14px;
+                        height:14px;
+                        }
+
+    .top_buttons_text {
+                       font-size:11px;
+                       margin-top:2px;
+                      }
+
+    .access {width:100%;
+             display:block;
+             padding-right:10px;
+             margin-top:10px;
+             }
+
+             .access div {
+                 font-size:12px;
+                 margin-right:2px;
+                 }
+
+
+             .text_block {
+                  margin-top:50px;
+    }
+       
+    .title {  
+            font-size:35px;
+        }
+
+    .text_block_text { 
+            font-size:14px;
+
+        }       
+
+
+    .button_block_text {font-size:13px;
+    margin-top:50px;
+
+    }
+
+
+    #text {
+          width:80%;
+          font-size:17px;
+        }
+
+    #button {
+             width:140px;
+             height:30px;
+             font-size:13px;
+             
+    }
+
+    .chatrooms_block {
+                     margin-top:40px;
+                    }
+
+
+    .chatrooms_button input {
+                              width:150px; 
+                              height:30px;   
+                              font-size:13px;                
+                                 }
+
+    .chatrooms_title {
+                      font-size:27px;
+    }
+
+    .chatrooms_main {
+                     margin-top:7px;
+    
+    }
+
+    .chatrooms_button form {
+                            margin-top:30px;
+                            }
+
+    .about_text {
+                 font-size:13px;
+            }
+
+    
+
+    .about_form {width:60px;
+                 }
+
+
+    .about_number {width:calc(61% - 60px);
+                   width:-moz-calc(61% - 60px);
+                   width:-webkit-calc(61% - 60px);
+                   margin-top:3px;
+
+    }
+
+    .about_number_image  {display:inline-block;
+                       float:right;
+                       height:initial;
+                       width:13px;
+                      }
+
+    .about_number_text  {width:initial;
+                       display:inline-block;
+                       float:right;
+                       font-size:13px;
+                       font-family: sans-serif;
+                       font-weight: bold;
+                       padding-right:10px;
+                      }
+
+    .about_form input {
+                       height:20px;
+                       font-size:12px;
+
+     }
+               
+
+           }
+
+           @media all and (max-width: 419px) and (min-width:320px){
+              
+            .music {width:80%;
+                display:block;
+            margin-left:10%;
+            margin-top:20px;
+                                }
+
+            .sports {width:80%;
+                display:block;
+                  margin-left:10%;
+                  margin-top:20px ;
+
+                                   }   
+
+
+            .electronics {width:80%;
+                  display:block;
+                  margin-left:10%;
+                  margin-top:20px ;
+
+                                   }  
+
+     ul {width:100%;
+        display:block;
+
+        }
+
+    ul li {
+        margin-left:4px;
+           }
+
+    .top_buttons_image {width:14px;
+                        height:14px;
+                        }
+
+    .top_buttons_text {
+                       font-size:10px;
+                       margin-top:2px;
+                      }
+
+    .access {width:100%;
+             display:block;
+             padding-right:10px;
+             margin-top:10px;
+             }
+
+             .access div {
+                 font-size:12px;
+                 margin-right:5px;
+                 }
+
+
+             .text_block {
+                  margin-top:70px;
+    }
+       
+    .title {  
+            font-size:40px;
+        }
+
+    .text_block_text { 
+            font-size:15px;
+
+        }       
+
+
+    .button_block_text {font-size:13px;
+    margin-top:50px;
+
+    }
+
+
+    #text {
+          width:80%;
+          font-size:20px;
+        }
+
+    #button {
+             width:150px;
+             height:35px;
+             font-size:15px;
+             
+    }
+
+    .chatrooms_block {
+                     margin-top:80px;
+                    }
+
+
+    .chatrooms_button input {
+                              width:170px; 
+                              height:35px;                   
+                                 }
+
+    .chatrooms_title {
+                      font-size:30px;
+    }
+
+    .chatrooms_main {
+                     margin-top:10px;
+    
+    }
+    .chatrooms_button form {
+                            margin-top:30px;
+                            }
+
+           }
+           
+
+
+
+
+           @media all and (max-width: 539px) and (min-width:420px){
+              
+
+            .music {width:62%;
+                display:block;
+            margin-left:19%;
+            margin-top:20px;
+                                }
+
+            .sports {width:62%;
+                display:block;
+                  margin-left:19%;
+                  margin-top:20px ;
+
+                                   }   
+
+
+            .electronics {width:62%;
+                  display:block;
+                  margin-left:19%;
+                  margin-top:20px ;
+
+                                   }    
+
+    ul {width:100%;
+        display:block;
+
+        }
+
+    ul li {
+        margin-left:7px;
+           }
+
+    .top_buttons_image {width:18px;
+                        height:18px;
+                        }
+
+    .top_buttons_text {
+                       font-size:13px;
+                       margin-top:2px;
+                      }
+
+    .access {width:100%;
+             display:block;
+             padding-right:20px;
+             margin-top:10px;
+             }
+
+
+
+    .text_block {
+                  margin-top: 120px;
+    }
+       
+    .title {  
+            font-size:45px;
+        }
+
+    .text_block_text { 
+            font-size:20px;
+
+        }       
+
+
+    .button_block_text {font-size:14px;
+
+    }
+
+
+    #text {
+          width:80%;
+          font-size:25px;
+        }
+
+    #button {
+             width:170px;
+             height:40px;
+             font-size:15px;
+             
+    }
+
+
+    .chatrooms_button input {
+                              width:200px; 
+                              height:40px;                      
+                                 }
+
+           }
+               
+
+   @media all and (max-width: 669px) and (min-width:540px){
+          
+            .music {width:50%;
+                display:block;
+            margin-left:25%;
+                                   }    
+    
+
+
+    .sports { width:50%;
+        display:block;
+                  margin-left:25%;
+                                   }   
+
+
+    .electronics {width:50%;
+        display:block;
+                  margin-left:25%;
+                  margin-top:20px ;
+
+                                   }   
+
+    ul {width:100%;
+        display:block;
+
+        }
+
+    ul li {
+        margin-left:10px;
+           }
+
+    
+
+    .top_buttons_image {width:18px;
+                        height:18px;
+                        }
+
+    .access {width:100%;
+             display:block;
+             float:left;
+             padding-right:20px;
+             margin-top:10px;
+             }
+
+    .title {  
+            font-size:50px;
+        }
+
+    .text_block_text { 
+            font-size:25px;
+        }
+
+        .button_block_text {font-size:15px;
+
+}
+
+
+#text {
+      width:80%;
+      font-size:25px;
+    }
+
+#button {
+         width:170px;
+         
+}
+
+
+.chatrooms_button input {
+                          width:200px;                       
+                             }
+
+       }
+
+       
+           
+
+
+           @media all and (max-width: 879px) and (min-width:670px){
+
+            .music {
+                display:inline-block;
+                width:40%;
+            margin-left:7,5%;
+                                   }    
+    
+
+
+    .sports { display:inline-block;
+          width:40%;
+                  margin-left:6%;
+                                   }   
+
+
+    .electronics {width:40%;
+        display:block;
+                  margin-left:30%;
+                  margin-top:20px ;
+
+                                   }   
+
+
+    ul li {
+            margin-left:15px;
+           }
+
+
+    .access {
+             padding-right:20px;
+             }
+
+
+    .text_block_text {   
+            font-size:30px;
+            margin-top:20px;
+
+        }
+
+        .chatrooms_button input {width:200px;                         
+                                 }
+    
+
+           }
+
+
+
+
+   @media all and (max-width:1079px) and (min-width: 880px){
+    
+    .music {width:30%;
+            margin-left:3%;
+                                   }    
+    
+
+
+    .sports {width:30%;
+                  margin-left:2%;
+                                   }   
+
+
+    .electronics {width:30%;
+                  margin-left:2%;
+
+                                   }   
+
+
+
+   }
+   
+ @media all and (min-width: 1080px) and (max-width: 1800px){
+
+           }
+
+
+ @media all and (min-width: 1801px) {
+               .container {width:60%;
+                min-height:1300px;
+                display:block;
+                float:none;
+                margin:auto;}
+           }
+    
+
+
+</style>
+    </head>
+    <body>
+<div class="container">
+ <header>
+<ul class="top_buttons">
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/trending.png" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">TRENDING</a></div>
+    </li>
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/star.png" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">MOST POPULAR</a></div>
+    </li>
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/heart.jpg" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">MOST LOVED</a></div>
+    </li>
+    <li>
+            <div class="top_buttons_image"><img src="libs/img/gift.png" alt="image" /></div>
+            <div class="top_buttons_text"><a href="">LATEST</a></div>
+    </li>
+</ul>
+<div class="access">    
+    <div class="registre"><a href="">REGISTER</a></div>
+    <div class="">/</div>
+    <div class="login"><a href="">LOGIN</a></div>
+</div>
+ </header>
+ <main>
+    <div class="text_block">
+        <div class="title">Chatyard</div>
+        <div class="text_block_text">Chat with amaizng people about any <b>#topics</b></div>
+    </div>
+    <div class="button_block">
+        <div class="button_block_text">CREATE CHAT GROUP OR JOIN</div>
+            <form class="button_block_form">
+                  <input type="text" id="text" placeholder="Add a name" name="text"/>
+                  <input type="button" id="button" value="GET STARTED" name="button"/>
+            </form>
+    </div>
+    <div class="chatrooms_block">
+        <div class="chatrooms_title"><b>Featured</b> Chatrooms</div>
+        <div class="miniline"></div>
+        <div class="chatrooms_main">
+            <div class="music">
+                <div class="music_image"><img src="libs/img/music_image.jpg" alt="image"/>
+                    <div class="about">
+                        <div class="about_text"># Music</div>
+                        <form class="about_form"><input type="button" value="Join" name="button"/></form>
+                        <div class="about_number">
+                            <div class="about_number_text">27.234</div>
+                            <div class="about_number_image"><img src="libs/img/about_number_image.png" alt="image" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sports">
+                <div class="sports_image"><img src="libs/img/sports_image.jpg" alt="image"/>
+                    <div class="about">
+                        <div class="about_text"># Sports</div>
+                        <form class="about_form"><input type="button" value="Join" name="button"/></form>
+                        <div class="about_number">
+                            <div class="about_number_text">27.234</div>
+                            <div class="about_number_image"><img src="libs/img/about_number_image.png" alt="image" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="electronics">
+                <div class="electronics_image"><img src="libs/img/electronics_image.jpg" alt="image"/>
+                    <div class="about">
+                        <div class="about_text"># Electronics</div>
+                        <form class="about_form"><input type="button" value="Join" name="button"/></form>
+                        <div class="about_number">
+                            <div class="about_number_text">27.234</div>
+                            <div class="about_number_image"><img src="libs/img/about_number_image.png" alt="image" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatrooms_button">
+        <form><input type="button" value="VIEW ALL CHATROOMS" name="button"/></form>
+        </div>
+    </div>
+ </main>
+</div>
+    </body>
+</html>
