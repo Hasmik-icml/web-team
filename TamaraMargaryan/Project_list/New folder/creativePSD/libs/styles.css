@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, white, white), linear-gradient(to bottom, #484848, #484848), linear-gradient(to bottom, #eeeeee, #eeeeee), linear-gradient(to bottom, #e5e5e5, #e5e5e5);
+  background-repeat: no-repeat;
+  background-position: 0 0,
+        0 75px,
+        0 475px,
+        0 775px;
+  background-size: 0 0,
+        100% 400px,
+        100% 330px,
+        100% 600px;
+}
+a {
+  text-decoration-line: none;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  width: calc(100% - 300px);
+  margin: 25px auto;
+}
+#header nav {
+  display: flex;
+}
+#header nav,
+#header .menu {
+  width: 100%;
+}
+#header .logo {
+  margin-right: 90px;
+}
+#header .menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+#header .menu ul li:last-child {
+  margin-left: 90px;
+  font-weight: 900;
+}
+#header .menu ul a {
+  text-transform: uppercase;
+  color: #313131;
+}
+.main-info {
+  height: 400px;
+  padding-top: 65px;
+  box-sizing: border-box;
+}
+.main-info .main-info--content {
+  text-align: center;
+}
+.main-info h1,
+.main-info p {
+  color: white;
+}
+.services-content {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.services-content--item {
+  width: calc(100% / 4);
+}
+.service-icon {
+  height: 60px;
+  width: 60px;
+  background-color: #3498db;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: 10px 15px;
+  margin: auto;
+}
+.service-title {
+  color: #3498db;
+  text-align: center;
+  font-weight: 900;
+}
+.service-info {
+  text-align: justify;
+}
+.services-content--item > div {
+  margin-bottom: 20px;
+}
+.consulting {
+  background-image: url(./img/icon1.png);
+}
+.developing {
+  background-image: url(./img/icon2.png);
+}
+.designing {
+  background-image: url(./img/icon3.png);
+}
+.analysis {
+  background-image: url(./img/icon4.png);
+}

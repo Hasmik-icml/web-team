@@ -1,0 +1,18 @@
+div{
+     box-sizing: border-box;
+}
+
+
+.block-row,.block-item{
+     display:grid;
+}
+.block-row{
+     width:100%;
+}
+.block-item{
+     width: calc(100% / 3);
+     width : -moz-calc(100% / 3);
+     width : -webkit-calc(100% / 3);
+     float: left;
+     padding: 5px;
+}

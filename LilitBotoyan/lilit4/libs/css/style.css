@@ -1,0 +1,89 @@
+* {
+
+     margin: 0;
+     padding: 0;
+     outline: none;
+}
+body{
+     box-sizing: border-box;
+}
+header{
+     background-color: #5896ec;
+     width: 100%;
+     min-height:200px ;
+     color:white;
+}
+.top-nav,.items{
+     width: 80%;
+}
+nav {
+     float: right;
+}
+ul{
+     display: flex;
+     justify-content: flex-end;
+     padding-top: 10px;
+
+}
+li{
+     margin-left: 20px;
+     list-style: none;
+}
+li>a{
+     text-decoration: none;
+     color: white;
+}
+.header-content{
+     width: 100%;
+     padding-top: 75px;
+}
+h1,p,h2 {
+     text-align: center;
+}
+.items{
+     padding-top: 150px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+}
+.item{
+     width: 30%;
+     text-align: center;
+}
+.item>img{
+     width: 80px;
+}
+.item>h4{
+     padding-top: 30px;
+}
+.item>p{
+     color:grey;
+}
+.container-fluid{
+     padding-top: 50px;
+}
+.octangle{
+     width: 50px;
+     height: 25px;
+     background-color: #c5d8ee;
+     margin: 20px auto;
+}
+.octangle:before{
+     top: -20px;
+     border-width: 0 25px 20px 25px;
+     margin-top: -50px;
+     border-color: transparent transparent #c5d8ee transparent;
+}
+.octangle:after{
+     border-width: 20px 25px 0 25px;
+     margin-top: 5px;
+     border-color: #c5d8ee transparent transparent transparent;
+}
+.octangle:before,.octangle:after{
+     content:"";
+     width: 0;
+     height: 0;
+     border-style: solid;
+     display: block;
+     position: relative;
+}

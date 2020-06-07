@@ -1,1 +1,3 @@
-It's a first project
+# This is an Armenian Web Team
+
+Armenian Web Dev Team

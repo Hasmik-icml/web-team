@@ -1,0 +1,174 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.clear{
+     clear: both;
+}
+/* Container */
+.container{
+     width: 1100px;
+     margin: 0 auto;
+    background: rgb(228, 226, 218);
+   display: grid;
+   grid-template-areas: 
+   'header header '
+   'article  aside'
+   
+   ;
+
+}
+/* Header */
+header{
+     grid-area: header;
+     height: 100px;
+     
+
+}
+/* Logo */
+.logo{
+     display: block;
+     width: 200px;
+     float: left;
+}
+.logoname{
+     display: inline-block;
+     width: 141px;
+     float: right;
+     font-size: 23px;
+     font-weight: 700;
+     line-height: 100px;
+     color:rgb(72, 141, 72);
+     
+     
+}
+/* Navigation */
+nav{
+     display: inline-block;
+     width: 500px;
+     background: mediumslateblue;
+}
+nav ul{
+     list-style-type: none;
+}
+nav ul li{
+     display: inline-block;
+     line-height: 100px;
+     float: left;
+
+}
+nav ul li a{
+     display: block;
+     padding: 0 29px;
+     background: springgreen;
+     font-size: 23px;
+     text-decoration: none;
+}
+nav ul li a:hover{
+     display: block;
+     background: slateblue;
+     
+}
+
+/* Right top buttons */
+
+.top-r-btn{
+     width: 400px;
+     height: 100px;
+     background: mediumturquoise;
+     float: right;
+     line-height: 100px;
+}
+.tbtn{
+     font-size: 23px;
+}
+.logbtn{
+     padding: 0 20px;
+}
+.trybtn{
+     outline: 1 solid black;
+     background: #fff;
+     padding: 10px 30px;
+     border-radius: 5px;
+
+}
+
+
+/* Article */
+article{
+     grid-area: article;
+     background: hotpink;
+     width: 700px;
+     height: 500px;
+}
+.article-content{
+     width: 550px;
+     height: 350px;
+     background: burlywood;
+     margin: 75px 20px;
+}
+
+article h1{
+     font-size:68px;
+     padding:20px 5px
+}
+article p{
+     font-size:25px;
+     padding:0px 5px
+}
+
+/* Aside */
+aside{
+     grid-area: aside;
+     background: khaki;
+     width: 400px;
+}
+.aside-content{
+     width: 300px;
+     height: 400px;
+     background: coral;
+     padding: 20px 10px;
+     margin: 30px auto;
+}
+
+/* Top form */
+.form-top,.form-buttom{
+     padding-bottom: 30px;
+}
+.form-top label{
+     display: block;
+     font-size: 25px;
+     font-weight: 900;
+     
+}
+.form-top input{
+     padding: 5px 33px;
+     font-size: 18px;
+}
+.form-top  input::placeholder{ 
+   color:red
+}
+
+/* Bottom form */
+.form-buttom input{
+   padding: 5px 20px;
+   font-size: 19px;
+}
+.form-buttom label{
+     display: block;
+    padding-top: 10px;
+    font-size: 14px;
+     
+     
+  }
+  .btn{
+       font-size: 18px;
+     padding: 7px 76px;  
+  }
+
+
+  /* Media query */
+  @media 
+
+
