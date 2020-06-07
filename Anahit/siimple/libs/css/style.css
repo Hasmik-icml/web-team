@@ -1,0 +1,173 @@
+
+body html{
+    margin: 0;
+    padding: 0;
+}
+* {box-sizing: border-box;}
+
+img {width: 100%;}
+
+.page_wrap{
+    width: 100%;
+    height: initial;
+    display: block;
+    float: none;
+}
+
+header {
+    width: 100%;
+    min-height: 320px;
+    background-color: #699FF6 ;
+    display: block;
+    float: left; 
+}
+
+nav {
+    width: 100%;
+    height: initial; 
+    display: block; 
+    float: left;
+}
+
+ul{
+    list-style: none; 
+    width: 100%; 
+    min-height: initial;
+    display: block; 
+    float: left;
+    padding-right: 12%;
+    
+}
+ul li{
+    display: inline;
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 0,8rem;
+}
+a{
+    color: white;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4F5152 ;
+}
+a:active{
+    color: navy;
+}
+.text{
+    width: 100%;
+    height: initial; 
+    display: block; 
+    float: left;
+    position: relative;
+    top: 70px;
+
+}
+.h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+.h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+main{
+    width: 100%;
+    min-height:initial;
+    display: block;
+    float: left;
+    background-color: #fafafa;
+}
+.big_box{
+    width: 60%;
+    min-height: initial;
+    display: block;
+    float: none;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.header{
+    width: 100%;
+    max-height: initial;
+    display: inline-block;
+    float: none;
+    margin: auto;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    
+}
+.box{
+    display:inline-block;
+    float:none;
+    margin:auto;
+    max-height: initial;
+    margin-top: 0px;
+    
+}
+
+   
+
+.block-item{
+    display: block;
+    width: calc(33%-30px);
+    float: none;
+    margin: auto;
+    position: relative;
+    min-height: 260px;
+    padding: 15px;
+    
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #484B4E;
+    width: 100%;
+    height: initial;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+
+}
+.description{
+    width: 100%;
+    height: initial;
+    display: block;
+    float: left;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Franklin Gothic Medium', 'Arial Narrow;
+}
+strong{
+    font-weight: bold;
+    color: #686E73;
+}
+
+.icon{
+    width: 30%;
+    min-height: initial;
+    float: none;
+    display: block;
+    margin: auto;
+}
+
+.item{
+    width: 33.3%;
+    float: left;
+
+    
+}

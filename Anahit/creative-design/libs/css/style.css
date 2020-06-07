@@ -1,0 +1,214 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+* {box-sizing: border-box ;}
+
+
+img{width:100%;}
+
+#page-wrap{
+    display:block;
+    float: l;;
+    margin:auto;
+    width:99.2%;
+    min-height: initial;
+   
+    
+}
+
+header{
+    width: 100%;
+    min-height: 40px;
+    display:block;
+    float:left;   
+  
+}
+
+header form {
+    width:50%;
+    min-height:30px;
+    float:none;
+    display:block;
+    margin:auto;
+    margin-top:3px;
+ 
+            
+}
+
+header form input{display:inline-block;
+    float:left;
+    width:450px;
+    min-height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+
+.icon {
+    width:25px;
+    height:initial;
+    display:inline-block;
+    float:left;
+    
+   
+}
+
+main{
+    width: 100%;
+    min-height: 655px;
+    display:block;
+    float:left;
+  
+    
+}
+
+.page-wrapper {
+    width:100%;
+    min-height:60px;
+    float:left;
+    display:block;
+   
+}
+
+
+
+.contacts div {
+    width:25px;
+    height:initial;
+    display:inline-block;
+    float:right;
+    margin-top:10px;
+    
+}
+
+nav{
+    width:80%;
+    min-height:50px;
+    display:inline-block;
+    float:left;
+    
+    
+
+
+}
+
+.contacts {
+    width:20%;
+    min-height:50px;
+    display:inline-block;
+    float:left;
+   
+
+}
+
+
+.menu {
+    list-style:none;
+    padding:0;
+    width:70%;
+    min-height: 30px;
+    float:right;    
+    margin-top:10px;
+
+}
+
+.menu li {
+    display:inline;
+    float:left;
+    margin-left:25px;
+}
+
+
+main .text{
+    text-align: center;
+    font-size: 1.5rem;
+    display: inline;
+    padding: 5px;
+    color: white;
+}
+a{
+    color:blue;
+    text-decoration:none;
+}
+a:hover{
+    color:#9636EA;
+    text-decoration:none;
+}
+a:active{
+    color: #280272;
+    text-decoration:none;
+}
+/* style for boxes*/
+
+.big_box{
+    display:block;
+    float:none;
+    margin:auto;
+    width:26%;
+    min-height: 40px;
+    margin-top: 20px;
+    
+}
+    
+
+.learn-more {
+    border: 1px solid #f0f8ff;
+    width: 46%;
+    min-height: 35px;
+    padding: 5px;
+    text-align: center;
+    background-color: currentColor;
+    float:right;    
+}
+
+.purchase-it{
+    border: 1px solid #f0f8ff;
+    width: 46%;
+    min-height: 35px;
+    padding: 5px;
+    text-align: center;    
+    background-color:#f0f8ff ;
+    float:left;
+}
+        
+/* *********** */
+
+@media all and (min-width: 768px){
+    
+    header form input  {
+        display: inline-block;
+        width: 95%;}
+    .nav-btn{
+       display: none;
+    }
+    
+    
+  }
+  @media all and (max-width: 767px){
+    
+    header form input {
+        display: inline-block;
+        width: 95%;}
+  .menu{
+  display: none;
+  text-align: center;
+   }
+   nav:hover .menu{
+     display: inline-block;
+   }
+   nav .menu li{
+     width: 100%;
+   }
+   
+   .learn-more{
+    display: block;
+    width: 100%;
+}
+   .purchase-it{
+    display: block;
+    width: 100%;
+}
+
+  }

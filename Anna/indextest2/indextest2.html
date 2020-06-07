@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>РЕНЕСАНС</title>
+</head>
+<style>
+body {
+    font: 12px Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.header-container{
+    min-height: 500px;
+    background: #030921;
+}
+.header-logo{
+    position: absolute;
+}
+.header-logo a{
+    width: 140px;
+    position: absolute;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    left: 90px;
+    top: 13px;
+    font-weight: 100;
+}
+.header-menu1{
+    position: absolute;
+    left: 320px;
+    top: -5px;
+}
+nav {
+    max-width: 900px;
+    left: 100px;
+    float: left ;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 15px;
+    float: left;
+    padding: 10px 10px;
+    font-weight: 100;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-top h1{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 100;
+    position: absolute;
+    left: 930px;
+    top: 10px;
+}
+.header-article{
+    background-color: #162345;
+    width: 100%;
+    height: 100%;
+    max-width: 365px;
+    min-height: 500px;
+    float: right;
+}
+.header-item h1{
+    width: 450px;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    left: 65px;
+    top: 100px;
+}
+.header-item h2{
+    width: 450px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+.header-item p{
+    width: 340px;
+    font-size: 16px;
+    color: #4a5567;
+    font-weight: 100;
+    position: absolute;
+    left: 65px;
+    top: 200px;
+    text-align: left;
+}
+.button .btn-sm {
+    padding: 13px 25px;
+    border-radius: 3px;
+}
+.button{
+    position: absolute;
+    top: 280px;
+    left: 65px;
+}
+.button .btn-primary, .btn-primary:active, .btn-primary.active {
+    background-color: #b92d2d;
+    border-color: #b92d2d;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button .btn {
+    font-size: 16px;
+    font-weight: 100;
+    border-width: 1px;
+    border-style: solid;
+    font-style: normal;
+    white-space: normal;
+    transition: all .2s ease-in-out,box-shadow 2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    margin-top: 30px;
+}
+.header-img1{
+    position: absolute;
+    top: 210px;
+    left: 825px;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+.main-container{
+    background: #ecebeb;
+    max-width: 1300px;
+    min-height: 700px;
+}
+.main-title h1{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    position: absolute;
+    left: 100px;
+    top: 520px;
+}
+.main-title h2{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    position: absolute;
+    left: 100px;
+    top: 550px;
+}
+.main-title p{
+    width: 600px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 100;
+    position: absolute;
+    left: 100px;
+    top: 590px;
+    text-align: left;
+}
+.main-key{
+    position: absolute;
+    top: 780px;
+    left: 100px;
+}
+.main-key h1{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    position: absolute;
+    left: 80px;
+    top: 5px;
+    width: 150px;
+}
+.main-img1{
+    position: absolute;
+    top: 550px;
+    left: 880px;
+}
+.main-img2{
+    position: absolute;
+    top: 550px;
+    left: 900px;
+}
+.main-img3{
+    position: absolute;
+    top: 530px;
+    left: 900px;
+}
+.main-img4{
+    position: absolute;
+    top: 720px;
+    left: 660px;
+}
+.grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 100px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  left: 80px;
+  top: 550px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+.main-grid h1{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+.main-grid h2{
+    font-size: 15px;
+    color: #7f4149;
+    font-weight: 600;
+}
+.main-grid h3{
+    font-size: 15px;
+    color: #7f4149;
+    font-weight: 600;
+    width: 76px;
+}
+.main-grid{
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+.main-icon{
+    position: absolute;
+    top: 1000px;
+    left: 230px;
+}
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <li><a href="#"><img src="https://www.bing.com/images/blob?bcid=REPwCjwIoOsAYA" alt=""></a></li>
+                </div>
+                <div class="header-menu1">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Галерея</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                </nav>
+                </div>
+                <div class="header-article">
+                <div class="header-top">
+                    <h1>+38(099)7378878</h1>
+                </div>
+                <div class="header-menu2">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                        </ul>
+                </nav>
+                </div>
+                <div class="header-title">
+                    <div class="header-item">
+                       <h1>ВЕДУШИЙ ФЕЛИКС РЕДЬКА И КОМАНДА</h1>
+                       <h2>РЕНЕСАНС.EVENT</h2>
+                       <p>Организация свадебных церемоний и банкетов ,чатных корпоративных и мероприятния,тематических праздников, промо-акций и т. д</p>
+                    </div>
+                    <div class="button">
+                        <a class="btn btn-sm btn-primary display-4" href="">Заказать консултацию</a>
+                    </div>
+                    <div class="header-img1">
+                        <img src="https://www.bing.com/images/blob?bcid=RB5EZUELeesATg" alt="">
+                    </div>
+                </div>
+</header>
+<main>
+    <div class="main-container">
+        <div class="main-content">
+            <div class="main-title">
+                <h1>О нас</h1>
+                <h2>ВЕДУШИЙ ФЕЛИКС РЕДЬКА</h2>
+                <p>Феликс Редька - это не очень нный скро, но ведущий интеллигентный с хорошим чувством юмора. Почему не очень скромный? Потому, что-эти слова я на себе писало сам. Почему интеллигентный? Потому, что я вырос в семье, где на одного человека в среднем приходится высшего образования 2,368. Почему и чувством юмора?Потому, что с шестого класса я играю в КВН на данный регулярно выступаю со стендап-ко недней в разных ю но ристических проектах Киева, Харько ва, а также являюсь участнико и юмористических теле-передач.</p>
+            </div>
+            <div class="main-key">
+                <a href="#"><img src="https://files.slack.com/files-pri/THA2Q1BT4-FTGQK14NT/i_play.png" alt=""></a>
+                <h1>Перейти к видео</h1>
+            </div>
+        </div>
+        <div class="main-images">
+        <div class="main-img1">
+            <img src="https://www.bing.com/images/blob?bcid=RHouTuzJzOsAaQ" alt="">
+        </div>
+        <div class="main-img2">
+            <img src="https://www.bing.com/images/blob?bcid=RPvnPer--usA7A" alt="">
+        </div>
+        <div class="main-img3">
+            <img src="https://www.bing.com/images/blob?bcid=RLRHaS-GOOsATA" alt="">
+        </div>
+        <div class="main-img4">
+            <img src="https://files.slack.com/files-pri/THA2Q1BT4-FTEF83M0U/restricter_1.jpg" alt="">
+        </div>
+        </div>
+        <div class="main-grid">
+            <div class="grid-container">
+                <div>
+                    <h1>8</h1>
+                    <h3>лет опыта на сцене</h3>
+                </div>
+                <div>
+                    <h1>4</h1>
+                    <h2>свадебных сезона</h2>
+                </div>
+                <div>
+                    <h1>267</h1>
+                    <h2>комедейных выступий</h2>
+                </div>  
+                <div>
+                    <h1>148</h1>
+                    <h2>проведённый мероприятия</h2>
+                </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        <div class="main-icon">
+            <img src="https://www.bing.com/images/blob?bcid=REMRxV9vZesAqxcxoNWLuD9SqbotqVTdP7I" alt="">
+        </div>
+</main>
+</body>
+</html>
