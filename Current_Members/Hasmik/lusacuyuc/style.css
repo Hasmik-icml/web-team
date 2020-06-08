@@ -1,0 +1,63 @@
+.section .green {
+  width: 100px;
+  height: 100px;
+  background: green;
+  border-radius: 50px;
+  margin-top: 2px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.15);
+  border: solid 1px rgba(5, 0, 0, 0.15);
+  
+}
+.section .red {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50px;
+  margin-top: 2px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.15);
+  border: solid 1px rgba(5, 0, 0, 0.15);
+}
+.section .yellow{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50px;
+  margin-top: 2px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.15);
+  border: solid 1px rgba(5, 0, 0, 0.15);
+}
+.main {
+  display: flex;
+}
+.input-value {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.unactive {
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 2px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.15);
+  border: solid 1px rgba(5, 0, 0, 0.15);
+}
+.unactive2 {
+  animation: unyellow 0.8s infinite;
+  background: yellow;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 2px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.15);
+  border: solid 1px rgba(5, 0, 0, 0.15);
+}
+
+@keyframes unyellow {
+  from {  
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
