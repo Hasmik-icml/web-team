@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
+
 <body>
   <div class="main">
-<div class="section">
-  <div class="green" id="green">
+    <div class="section">
+      <div class="green" id="green">
+      </div>
+      <div class="yellow" id="yellow"></div>
+      <div class="red" id="red"></div>
+    </div>
+    <!-- /.section -->
+    <div class="input-value">
+      <input type="text" class="color_value" id="input-text">
+      <button class="ok" onclick="colorFunction()">ok</button>
+      <button class="ok" onclick="maqrel()">Մաքրել</button>
+    </div>
   </div>
-  <div class="yellow" id="yellow"></div>
-  <div class="red" id="red"></div>
-</div>
-<!-- /.section -->
-<div class="input-value">
-  <input type="text" class="color_value" id="input-text">
-  <button class="ok" onclick="colorFunction()">ok</button>
-  <button class="ok" onclick="maqrel()">Մաքրել</button>
-</div>
-</div>
-<!-- /.main -->
-<script>
-  function maqrel() {
-    document.getElementById('yellow').setAttribute('class', 'unactive');
-    document.getElementById('red').setAttribute('class', 'unactive');
-    document.getElementById('green').setAttribute('class', 'unactive');
-  }
-  function colorFunction() {
-  let g = "green";
-  let y = "yellow";
-  let r = "red";
-  let color_value = document.getElementById('input-text').value;
-  if (color_value == g ) {
-    document.getElementById('green').setAttribute('class', 'green');
-    document.getElementById('red').setAttribute('class', 'unactive');
-    document.getElementById('yellow').setAttribute('class', 'unactive');
-  } else if (color_value == y ) {
-    document.getElementById('yellow').setAttribute('class', 'unactive2');
-    document.getElementById('green').setAttribute('class', 'unactive');
-    document.getElementById('red').setAttribute('class', 'unactive');
-  } else if (color_value == r) {
-    document.getElementById('red').setAttribute('class', 'red');
-    document.getElementById('green').setAttribute('class', 'unactive');
-    document.getElementById('yellow').setAttribute('class', 'unactive');
-  } else {
-    alert("Լուսացույցը չի աշխատում:");
-  }
-// alert(color_value);
-  }
-</script>
+  <!-- /.main -->
+  <script>
+    function maqrel() {
+      document.getElementById('yellow').setAttribute('class', 'unactive');
+      document.getElementById('red').setAttribute('class', 'unactive');
+      document.getElementById('green').setAttribute('class', 'unactive');
+    }
+
+    function colorFunction() {
+      let g = "green";
+      let y = "yellow";
+      let r = "red";
+      let color_value = document.getElementById('input-text').value;
+      if (color_value == g) {
+        document.getElementById('green').setAttribute('class', 'green');
+        document.getElementById('red').setAttribute('class', 'unactive');
+        document.getElementById('yellow').setAttribute('class', 'unactive');
+      } else if (color_value == y) {
+        document.getElementById('yellow').setAttribute('class', 'unactive2');
+        document.getElementById('green').setAttribute('class', 'unactive');
+        document.getElementById('red').setAttribute('class', 'unactive');
+      } else if (color_value == r) {
+        document.getElementById('red').setAttribute('class', 'red');
+        document.getElementById('green').setAttribute('class', 'unactive');
+        document.getElementById('yellow').setAttribute('class', 'unactive');
+      } else {
+        alert("Լուսացույցը չի աշխատում:");
+      }
+      // alert(color_value);
+    }
+  </script>
 </body>
+
 </html>
